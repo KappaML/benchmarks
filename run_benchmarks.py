@@ -80,7 +80,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False):
     print(f"Synthetic: {is_synthetic}")
     
     # Set number of samples to run the benchmark on
-    n_samples = 1_000
+    n_samples = 10_000
     if is_synthetic:
         dataset = dataset().take(n_samples)
     else:
@@ -132,13 +132,20 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False):
             if i % 100 == 0:
                 metrics = client.get_metrics(model_id)
                 result["metrics"].append({
+                    "samples": i,
                     "time": time.time() - start_time,
                     "metrics": metrics
                 })
                 # Update local metrics
                 result["local_metrics"].append({
+                    "samples": i,
                     "time": time.time() - start_time,
-                    "metrics": metric.get()
+                    "metrics": {
+                        "metric": {
+                            "name": metric.__class__.__name__,
+                            "value": metric.get()
+                        }
+                    }
                 })
 
         # Final metrics

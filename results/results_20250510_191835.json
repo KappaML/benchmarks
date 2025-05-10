@@ -1,0 +1,432 @@
+{
+  "timestamp": "20250510_191835",
+  "results": [
+    {
+      "dataset": "ChickWeights",
+      "is_synthetic": false,
+      "n_samples": 578,
+      "task": "regression",
+      "timestamp": "2025-05-10T19:18:35.007853",
+      "status": "completed",
+      "metrics": [
+        {
+          "time": 0.6700348854064941,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.0
+            },
+            "samples": 1
+          }
+        },
+        {
+          "time": 8.591031074523926,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.34560058002296
+            },
+            "samples": 101
+          }
+        },
+        {
+          "time": 16.152836084365845,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 13.302523969567147
+            },
+            "samples": 201
+          }
+        },
+        {
+          "time": 23.57056474685669,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 13.504847281259211
+            },
+            "samples": 301
+          }
+        },
+        {
+          "time": 30.966458797454834,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 15.424074278508208
+            },
+            "samples": 401
+          }
+        },
+        {
+          "time": 38.99616098403931,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.722921484675915
+            },
+            "samples": 501
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "time": 0.670037031173706,
+          "metrics": 100.0
+        },
+        {
+          "time": 8.591032981872559,
+          "metrics": 19.34560058002296
+        },
+        {
+          "time": 16.152836799621582,
+          "metrics": 13.302523969567147
+        },
+        {
+          "time": 23.5705668926239,
+          "metrics": 13.504847281259211
+        },
+        {
+          "time": 30.966460943222046,
+          "metrics": 15.424074278508208
+        },
+        {
+          "time": 38.996164083480835,
+          "metrics": 17.722921484675915
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 19.172579794347204
+        },
+        "samples": 578
+      },
+      "local_final_metrics": 19.172579794347204,
+      "model_id": "d14ee0f8-95bd-4e40-8703-5daa18dcce4c"
+    },
+    {
+      "dataset": "Friedman",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "regression",
+      "timestamp": "2025-05-10T19:19:47.231843",
+      "status": "completed",
+      "metrics": [
+        {
+          "time": 0.5892112255096436,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.0
+            },
+            "samples": 1
+          }
+        },
+        {
+          "time": 8.71224594116211,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.08982622679333
+            },
+            "samples": 101
+          }
+        },
+        {
+          "time": 16.321166038513184,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.267130679324108
+            },
+            "samples": 201
+          }
+        },
+        {
+          "time": 24.249040126800537,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.689711719406127
+            },
+            "samples": 301
+          }
+        },
+        {
+          "time": 31.917553186416626,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.662099058447556
+            },
+            "samples": 401
+          }
+        },
+        {
+          "time": 39.51345205307007,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.88084384968845
+            },
+            "samples": 501
+          }
+        },
+        {
+          "time": 47.024317026138306,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.105606125380184
+            },
+            "samples": 601
+          }
+        },
+        {
+          "time": 54.62025332450867,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.833172720990905
+            },
+            "samples": 701
+          }
+        },
+        {
+          "time": 62.48550510406494,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.735993215959994
+            },
+            "samples": 801
+          }
+        },
+        {
+          "time": 69.96901297569275,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.614147972808514
+            },
+            "samples": 901
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "time": 0.5892131328582764,
+          "metrics": 100.0
+        },
+        {
+          "time": 8.712248086929321,
+          "metrics": 25.08982622679333
+        },
+        {
+          "time": 16.321168184280396,
+          "metrics": 22.267130679324108
+        },
+        {
+          "time": 24.249041080474854,
+          "metrics": 20.689711719406127
+        },
+        {
+          "time": 31.91755485534668,
+          "metrics": 19.662099058447556
+        },
+        {
+          "time": 39.513453006744385,
+          "metrics": 19.88084384968845
+        },
+        {
+          "time": 47.02431893348694,
+          "metrics": 19.105606125380184
+        },
+        {
+          "time": 54.62025499343872,
+          "metrics": 18.833172720990905
+        },
+        {
+          "time": 62.485507011413574,
+          "metrics": 19.735993215959994
+        },
+        {
+          "time": 69.96901392936707,
+          "metrics": 19.614147972808514
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 19.438691684775208
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 19.438691684775208,
+      "model_id": "ddbdb7e5-7a7b-480a-b24b-31491cb7b26c"
+    },
+    {
+      "dataset": "Waveform",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-10T19:22:38.877345",
+      "status": "completed",
+      "metrics": [
+        {
+          "time": 0.4047200679779053,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 1
+          }
+        },
+        {
+          "time": 7.889288902282715,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7
+            },
+            "samples": 101
+          }
+        },
+        {
+          "time": 15.410209894180298,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.735
+            },
+            "samples": 201
+          }
+        },
+        {
+          "time": 22.865992784500122,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.75
+            },
+            "samples": 301
+          }
+        },
+        {
+          "time": 30.814625024795532,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7675
+            },
+            "samples": 401
+          }
+        },
+        {
+          "time": 38.39401173591614,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.772
+            },
+            "samples": 501
+          }
+        },
+        {
+          "time": 45.9881808757782,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7783333333333333
+            },
+            "samples": 601
+          }
+        },
+        {
+          "time": 53.60388970375061,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7814285714285715
+            },
+            "samples": 701
+          }
+        },
+        {
+          "time": 61.20502686500549,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.79125
+            },
+            "samples": 801
+          }
+        },
+        {
+          "time": 68.96056175231934,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7911111111111111
+            },
+            "samples": 901
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "time": 0.4047207832336426,
+          "metrics": 0.0
+        },
+        {
+          "time": 7.889289855957031,
+          "metrics": 0.693069306930693
+        },
+        {
+          "time": 15.41021203994751,
+          "metrics": 0.7313432835820896
+        },
+        {
+          "time": 22.865993976593018,
+          "metrics": 0.7475083056478405
+        },
+        {
+          "time": 30.81462597846985,
+          "metrics": 0.7655860349127181
+        },
+        {
+          "time": 38.39401292800903,
+          "metrics": 0.7704590818363274
+        },
+        {
+          "time": 45.988181829452515,
+          "metrics": 0.7770382695507487
+        },
+        {
+          "time": 53.603890895843506,
+          "metrics": 0.7803138373751783
+        },
+        {
+          "time": 61.20502805709839,
+          "metrics": 0.7902621722846442
+        },
+        {
+          "time": 68.96056294441223,
+          "metrics": 0.7902330743618202
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.7897897897897898
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.789,
+      "model_id": "e06774dd-399b-43e0-a57b-e12532dd957a"
+    }
+  ]
+}
