@@ -33,3 +33,10 @@ jobs:
         name: benchmark-results
         path: results/
         retention-days: 90 
+        
+    - name: Upload figures
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark-figures
+        path: figures/
+        retention-days: 90 
