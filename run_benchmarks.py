@@ -13,6 +13,84 @@ from kappaml import KappaML
 # Get API key from https://app.kappaml.com/api-keys and set as env variable
 # export KAPPAML_API_KEY="your_api_key_here"
 
+"""
+Real Datasets from river.datasets
+
+**Regression**
+
+| Name                                               | Samples   |   Features |
+|:---------------------------------------------------|:----------|-----------:|
+| [AirlinePassengers](../datasets/AirlinePassengers) | 144       |          1 |
+| [Bikes](../datasets/Bikes)                         | 182,470   |          8 |
+| [ChickWeights](../datasets/ChickWeights)           | 578       |          3 |
+| [MovieLens100K](../datasets/MovieLens100K)         | 100,000   |         10 |
+| [Restaurants](../datasets/Restaurants)             | 252,108   |          7 |
+| [Taxis](../datasets/Taxis)                         | 1,458,644 |          8 |
+| [TrumpApproval](../datasets/TrumpApproval)         | 1,001     |          6 |
+| [WaterFlow](../datasets/WaterFlow)                 | 1,268     |          1 |
+
+
+**Binary classification**
+
+| Name                                     | Samples    | Features   |Sparse |
+|:-----------------------------------------|:-----------|:-----------|:-----|
+| [Bananas](../datasets/Bananas)           | 5,300      | 2          |      |
+| [CreditCard](../datasets/CreditCard)     | 284,807    | 30         |      |
+| [Elec2](../datasets/Elec2)               | 45,312     | 8          |      |
+| [Higgs](../datasets/Higgs)               | 11,000,000 | 28         |      |
+| [HTTP](../datasets/HTTP)                 | 567,498    | 3          |      |
+| [MaliciousURL](../datasets/MaliciousURL) | 2,396,130  | 3,231,961  | ✔️   |
+| [Phishing](../datasets/Phishing)         | 1,250      | 9          |      |
+| [SMSSpam](../datasets/SMSSpam)           | 5,574      | 1          |      |
+| [SMTP](../datasets/SMTP)                 | 95,156     | 3          |      |
+| [TREC07](../datasets/TREC07)             | 75,419     | 5          |      |
+
+**Multi-class classification**
+
+| Name                                       | Samples   |   Features |Classes|
+|:-------------------------------------------|:----------|-----------:|------:|
+| [ImageSegments](../datasets/ImageSegments) | 2,310     |         18 |     7 |
+| [Insects](../datasets/Insects)             | 52,848    |         33 |     6 |
+| [Keystroke](../datasets/Keystroke)         | 20,400    |         31 |    51 |
+"""
+
+"""
+Synthetic Datasets from river.datasets.synth
+**Regression**
+
+| Name                                             |   Features |
+|:-------------------------------------------------|-----------:|
+| [Friedman](../datasets/synth/Friedman)           |         10 |
+| [FriedmanDrift](../datasets/synth/FriedmanDrift) |         10 |
+| [Mv](../datasets/synth/Mv)                       |         10 |
+| [Planes2D](../datasets/synth/Planes2D)           |         10 |
+
+**Binary classification**
+
+| Name                                                       |   Features |
+|:-----------------------------------------------------------|-----------:|
+| [Agrawal](../datasets/synth/Agrawal)                       |          9 |
+| [AnomalySine](../datasets/synth/AnomalySine)               |          2 |
+| [ConceptDriftStream](../datasets/synth/ConceptDriftStream) |          9 |
+| [Hyperplane](../datasets/synth/Hyperplane)                 |         10 |
+| [Mixed](../datasets/synth/Mixed)                           |          4 |
+| [SEA](../datasets/synth/SEA)                               |          3 |
+| [Sine](../datasets/synth/Sine)                             |          2 |
+| [STAGGER](../datasets/synth/STAGGER)                       |          3 |
+
+
+**Multi-class classification**
+
+| Name                                               |   Features |   Classes |
+|:---------------------------------------------------|-----------:|----------:|
+| [LED](../datasets/synth/LED)                       |          7 |        10 |
+| [LEDDrift](../datasets/synth/LEDDrift)             |          7 |        10 |
+| [RandomRBF](../datasets/synth/RandomRBF)           |         10 |         2 |
+| [RandomRBFDrift](../datasets/synth/RandomRBFDrift) |         10 |         2 |
+| [RandomTree](../datasets/synth/RandomTree)         |         10 |         2 |
+| [Waveform](../datasets/synth/Waveform)             |         21 |         3 |
+
+"""
 DATASETS = {
     "regression": {
         "real": [
@@ -45,7 +123,7 @@ DATASETS = {
             datasets.Bananas,
             datasets.CreditCard,
             datasets.Elec2,
-            datasets.Higgs,
+            # datasets.Higgs,
             datasets.HTTP,
             datasets.MaliciousURL,
             datasets.Phishing,
