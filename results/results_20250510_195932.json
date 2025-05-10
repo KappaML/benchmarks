@@ -1,0 +1,2580 @@
+{
+  "timestamp": "20250510_195932",
+  "results": [
+    {
+      "dataset": "ChickWeights",
+      "is_synthetic": false,
+      "n_samples": 578,
+      "task": "regression",
+      "timestamp": "2025-05-10T19:59:32.347238",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.5397751331329346,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.0
+            },
+            "samples": 1
+          }
+        },
+        {
+          "samples": 100,
+          "time": 7.657883882522583,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.34560058002296
+            },
+            "samples": 101
+          }
+        },
+        {
+          "samples": 200,
+          "time": 14.513989925384521,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 13.302523969567147
+            },
+            "samples": 201
+          }
+        },
+        {
+          "samples": 300,
+          "time": 21.376830101013184,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 13.504847281259211
+            },
+            "samples": 301
+          }
+        },
+        {
+          "samples": 400,
+          "time": 28.389761209487915,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 15.424074278508208
+            },
+            "samples": 401
+          }
+        },
+        {
+          "samples": 500,
+          "time": 35.74134111404419,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.722921484675915
+            },
+            "samples": 501
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.5397770404815674,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.0
+            }
+          }
+        },
+        {
+          "samples": 100,
+          "time": 7.657886028289795,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.34560058002296
+            }
+          }
+        },
+        {
+          "samples": 200,
+          "time": 14.513992071151733,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 13.302523969567147
+            }
+          }
+        },
+        {
+          "samples": 300,
+          "time": 21.376832008361816,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 13.504847281259211
+            }
+          }
+        },
+        {
+          "samples": 400,
+          "time": 28.38976287841797,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 15.424074278508208
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 35.74134302139282,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.722921484675915
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 19.172579794347204
+        },
+        "samples": 578
+      },
+      "local_final_metrics": 19.172579794347204,
+      "model_id": "48d8e90a-8b00-48cc-a1af-9f607ced0661"
+    },
+    {
+      "dataset": "Friedman",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "regression",
+      "timestamp": "2025-05-10T20:00:41.208998",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.47521209716796875,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.0
+            },
+            "samples": 1
+          }
+        },
+        {
+          "samples": 100,
+          "time": 8.689993858337402,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.876399625060962
+            },
+            "samples": 101
+          }
+        },
+        {
+          "samples": 200,
+          "time": 16.457733869552612,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.417380709973685
+            },
+            "samples": 201
+          }
+        },
+        {
+          "samples": 300,
+          "time": 24.172064065933228,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.003272822132164
+            },
+            "samples": 301
+          }
+        },
+        {
+          "samples": 400,
+          "time": 32.05172085762024,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.207711977314553
+            },
+            "samples": 401
+          }
+        },
+        {
+          "samples": 500,
+          "time": 39.31297206878662,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.9402472079013
+            },
+            "samples": 501
+          }
+        },
+        {
+          "samples": 600,
+          "time": 46.20277285575867,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.02109360483454
+            },
+            "samples": 601
+          }
+        },
+        {
+          "samples": 700,
+          "time": 53.02393698692322,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.511500443792347
+            },
+            "samples": 701
+          }
+        },
+        {
+          "samples": 800,
+          "time": 59.92709302902222,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.512608565734062
+            },
+            "samples": 801
+          }
+        },
+        {
+          "samples": 900,
+          "time": 66.8157229423523,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.430565066003954
+            },
+            "samples": 901
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 73.73706197738647,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.096768185958645
+            },
+            "samples": 1001
+          }
+        },
+        {
+          "samples": 1100,
+          "time": 80.63068699836731,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.12584021567253
+            },
+            "samples": 1101
+          }
+        },
+        {
+          "samples": 1200,
+          "time": 87.71355891227722,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.280009296768647
+            },
+            "samples": 1201
+          }
+        },
+        {
+          "samples": 1300,
+          "time": 94.69605493545532,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.04321309457423
+            },
+            "samples": 1301
+          }
+        },
+        {
+          "samples": 1400,
+          "time": 101.8242130279541,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.883158613200937
+            },
+            "samples": 1401
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 111.01955699920654,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.559321784763
+            },
+            "samples": 1501
+          }
+        },
+        {
+          "samples": 1600,
+          "time": 119.47230100631714,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.490590209907214
+            },
+            "samples": 1601
+          }
+        },
+        {
+          "samples": 1700,
+          "time": 127.85850691795349,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.525228384710903
+            },
+            "samples": 1701
+          }
+        },
+        {
+          "samples": 1800,
+          "time": 136.2989308834076,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.37524218325487
+            },
+            "samples": 1801
+          }
+        },
+        {
+          "samples": 1900,
+          "time": 144.64594793319702,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.23869218737929
+            },
+            "samples": 1901
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 152.32592296600342,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.95982323852031
+            },
+            "samples": 2001
+          }
+        },
+        {
+          "samples": 2100,
+          "time": 160.1626479625702,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.015677666146562
+            },
+            "samples": 2101
+          }
+        },
+        {
+          "samples": 2200,
+          "time": 167.92991590499878,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.92325300556546
+            },
+            "samples": 2201
+          }
+        },
+        {
+          "samples": 2300,
+          "time": 175.81389784812927,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.824644036821343
+            },
+            "samples": 2301
+          }
+        },
+        {
+          "samples": 2400,
+          "time": 183.7162208557129,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.713301935390795
+            },
+            "samples": 2401
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 190.74142694473267,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.65177869864637
+            },
+            "samples": 2501
+          }
+        },
+        {
+          "samples": 2600,
+          "time": 197.7521448135376,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.571444875679045
+            },
+            "samples": 2601
+          }
+        },
+        {
+          "samples": 2700,
+          "time": 204.82175302505493,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.587530041131135
+            },
+            "samples": 2701
+          }
+        },
+        {
+          "samples": 2800,
+          "time": 211.92239904403687,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.52718774964982
+            },
+            "samples": 2801
+          }
+        },
+        {
+          "samples": 2900,
+          "time": 219.12490701675415,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.523868988572932
+            },
+            "samples": 2901
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 226.66138911247253,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.497604084875682
+            },
+            "samples": 3001
+          }
+        },
+        {
+          "samples": 3100,
+          "time": 234.22711491584778,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.472026620291455
+            },
+            "samples": 3101
+          }
+        },
+        {
+          "samples": 3200,
+          "time": 241.85061192512512,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.448559288238457
+            },
+            "samples": 3201
+          }
+        },
+        {
+          "samples": 3300,
+          "time": 249.3719310760498,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.388881910289655
+            },
+            "samples": 3301
+          }
+        },
+        {
+          "samples": 3400,
+          "time": 257.2726559638977,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.545401840945434
+            },
+            "samples": 3401
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 264.5713768005371,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.476659815117337
+            },
+            "samples": 3501
+          }
+        },
+        {
+          "samples": 3600,
+          "time": 271.6867880821228,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.465931924965044
+            },
+            "samples": 3601
+          }
+        },
+        {
+          "samples": 3700,
+          "time": 279.05545687675476,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.356730783413546
+            },
+            "samples": 3701
+          }
+        },
+        {
+          "samples": 3800,
+          "time": 286.6108238697052,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.35877823359491
+            },
+            "samples": 3801
+          }
+        },
+        {
+          "samples": 3900,
+          "time": 293.90845489501953,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.37722734786166
+            },
+            "samples": 3901
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 300.94621109962463,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.333087046198564
+            },
+            "samples": 4001
+          }
+        },
+        {
+          "samples": 4100,
+          "time": 308.1728549003601,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.291029126478442
+            },
+            "samples": 4101
+          }
+        },
+        {
+          "samples": 4200,
+          "time": 315.19691705703735,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.22665031957975
+            },
+            "samples": 4201
+          }
+        },
+        {
+          "samples": 4300,
+          "time": 322.7482559680939,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.15381028226813
+            },
+            "samples": 4301
+          }
+        },
+        {
+          "samples": 4400,
+          "time": 330.089684009552,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.16368239367023
+            },
+            "samples": 4401
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 337.04072403907776,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.158760266404713
+            },
+            "samples": 4501
+          }
+        },
+        {
+          "samples": 4600,
+          "time": 343.9174897670746,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.1557064799801
+            },
+            "samples": 4601
+          }
+        },
+        {
+          "samples": 4700,
+          "time": 350.94712018966675,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.09729032197987
+            },
+            "samples": 4701
+          }
+        },
+        {
+          "samples": 4800,
+          "time": 358.00687193870544,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.12209292447245
+            },
+            "samples": 4801
+          }
+        },
+        {
+          "samples": 4900,
+          "time": 365.28006982803345,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.058272812854888
+            },
+            "samples": 4901
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 372.6847229003906,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.07419854687699
+            },
+            "samples": 5001
+          }
+        },
+        {
+          "samples": 5100,
+          "time": 380.37493801116943,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.00258655094793
+            },
+            "samples": 5101
+          }
+        },
+        {
+          "samples": 5200,
+          "time": 387.71508407592773,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.013451211477076
+            },
+            "samples": 5201
+          }
+        },
+        {
+          "samples": 5300,
+          "time": 395.12429785728455,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.99108108681559
+            },
+            "samples": 5301
+          }
+        },
+        {
+          "samples": 5400,
+          "time": 402.84700202941895,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.956468889967613
+            },
+            "samples": 5401
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 409.9634199142456,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.967864110441102
+            },
+            "samples": 5501
+          }
+        },
+        {
+          "samples": 5600,
+          "time": 417.1518039703369,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.91639944229182
+            },
+            "samples": 5601
+          }
+        },
+        {
+          "samples": 5700,
+          "time": 424.3993139266968,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.883363170649787
+            },
+            "samples": 5701
+          }
+        },
+        {
+          "samples": 5800,
+          "time": 431.52383399009705,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.90974139533819
+            },
+            "samples": 5801
+          }
+        },
+        {
+          "samples": 5900,
+          "time": 438.6115367412567,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.868769788396712
+            },
+            "samples": 5901
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 445.82293701171875,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.8295947529386
+            },
+            "samples": 6001
+          }
+        },
+        {
+          "samples": 6100,
+          "time": 452.96150398254395,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.810283807808393
+            },
+            "samples": 6101
+          }
+        },
+        {
+          "samples": 6200,
+          "time": 460.3244459629059,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.798513042831352
+            },
+            "samples": 6201
+          }
+        },
+        {
+          "samples": 6300,
+          "time": 467.4970118999481,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.7931619607921
+            },
+            "samples": 6301
+          }
+        },
+        {
+          "samples": 6400,
+          "time": 475.1166651248932,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.76976107159263
+            },
+            "samples": 6401
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 482.33172512054443,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.77985383589787
+            },
+            "samples": 6501
+          }
+        },
+        {
+          "samples": 6600,
+          "time": 489.5322108268738,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.93030507585488
+            },
+            "samples": 6601
+          }
+        },
+        {
+          "samples": 6700,
+          "time": 496.63659596443176,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.928315204060816
+            },
+            "samples": 6701
+          }
+        },
+        {
+          "samples": 6800,
+          "time": 503.77220702171326,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.919335579279068
+            },
+            "samples": 6801
+          }
+        },
+        {
+          "samples": 6900,
+          "time": 511.22405910491943,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.089024688860462
+            },
+            "samples": 6901
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 518.5867428779602,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.07448509555327
+            },
+            "samples": 7001
+          }
+        },
+        {
+          "samples": 7100,
+          "time": 525.959774017334,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.115461751690415
+            },
+            "samples": 7101
+          }
+        },
+        {
+          "samples": 7200,
+          "time": 533.4638519287109,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.076765383786274
+            },
+            "samples": 7201
+          }
+        },
+        {
+          "samples": 7300,
+          "time": 541.1277890205383,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.032292030468927
+            },
+            "samples": 7301
+          }
+        },
+        {
+          "samples": 7400,
+          "time": 548.5956220626831,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.006942970533267
+            },
+            "samples": 7401
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 556.2181529998779,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.954491514919226
+            },
+            "samples": 7501
+          }
+        },
+        {
+          "samples": 7600,
+          "time": 563.8978428840637,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.919982346244108
+            },
+            "samples": 7601
+          }
+        },
+        {
+          "samples": 7700,
+          "time": 571.424103975296,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.882405305935634
+            },
+            "samples": 7701
+          }
+        },
+        {
+          "samples": 7800,
+          "time": 579.0677371025085,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.830750482331634
+            },
+            "samples": 7801
+          }
+        },
+        {
+          "samples": 7900,
+          "time": 586.8472549915314,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.783180340568133
+            },
+            "samples": 7901
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 594.4444110393524,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.75937495539291
+            },
+            "samples": 8001
+          }
+        },
+        {
+          "samples": 8100,
+          "time": 601.9203288555145,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.750545970923618
+            },
+            "samples": 8101
+          }
+        },
+        {
+          "samples": 8200,
+          "time": 609.6463730335236,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.796846857555305
+            },
+            "samples": 8201
+          }
+        },
+        {
+          "samples": 8300,
+          "time": 617.1611518859863,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.815395433154162
+            },
+            "samples": 8301
+          }
+        },
+        {
+          "samples": 8400,
+          "time": 624.8178300857544,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.804720759767886
+            },
+            "samples": 8401
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 632.0287499427795,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.81781637214514
+            },
+            "samples": 8501
+          }
+        },
+        {
+          "samples": 8600,
+          "time": 639.4154119491577,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.84129166494951
+            },
+            "samples": 8601
+          }
+        },
+        {
+          "samples": 8700,
+          "time": 646.9596700668335,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.816002981845667
+            },
+            "samples": 8701
+          }
+        },
+        {
+          "samples": 8800,
+          "time": 654.1660721302032,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.783796504130336
+            },
+            "samples": 8801
+          }
+        },
+        {
+          "samples": 8900,
+          "time": 661.7212069034576,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.739783987832904
+            },
+            "samples": 8901
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 669.1553158760071,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.736236048833437
+            },
+            "samples": 9001
+          }
+        },
+        {
+          "samples": 9100,
+          "time": 676.7790789604187,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.701728756529068
+            },
+            "samples": 9101
+          }
+        },
+        {
+          "samples": 9200,
+          "time": 684.578174829483,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.692268079713237
+            },
+            "samples": 9201
+          }
+        },
+        {
+          "samples": 9300,
+          "time": 692.2107360363007,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.677967816883413
+            },
+            "samples": 9301
+          }
+        },
+        {
+          "samples": 9400,
+          "time": 699.9657778739929,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.72182337466081
+            },
+            "samples": 9401
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 707.5969109535217,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.716041697608002
+            },
+            "samples": 9501
+          }
+        },
+        {
+          "samples": 9600,
+          "time": 715.0970737934113,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.74036857679416
+            },
+            "samples": 9601
+          }
+        },
+        {
+          "samples": 9700,
+          "time": 722.6582839488983,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.754931165278194
+            },
+            "samples": 9701
+          }
+        },
+        {
+          "samples": 9800,
+          "time": 729.9629690647125,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.734957027468294
+            },
+            "samples": 9801
+          }
+        },
+        {
+          "samples": 9900,
+          "time": 737.6495170593262,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.742614545417805
+            },
+            "samples": 9901
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.47521400451660156,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.0
+            }
+          }
+        },
+        {
+          "samples": 100,
+          "time": 8.689996004104614,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.876399625060962
+            }
+          }
+        },
+        {
+          "samples": 200,
+          "time": 16.457735776901245,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.417380709973685
+            }
+          }
+        },
+        {
+          "samples": 300,
+          "time": 24.172065019607544,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.003272822132164
+            }
+          }
+        },
+        {
+          "samples": 400,
+          "time": 32.05172395706177,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.207711977314553
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 39.312973976135254,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.9402472079013
+            }
+          }
+        },
+        {
+          "samples": 600,
+          "time": 46.20277404785156,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.02109360483454
+            }
+          }
+        },
+        {
+          "samples": 700,
+          "time": 53.023937940597534,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.511500443792347
+            }
+          }
+        },
+        {
+          "samples": 800,
+          "time": 59.92709302902222,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.512608565734062
+            }
+          }
+        },
+        {
+          "samples": 900,
+          "time": 66.8157250881195,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.430565066003954
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 73.73706388473511,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.096768185958645
+            }
+          }
+        },
+        {
+          "samples": 1100,
+          "time": 80.63068890571594,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.12584021567253
+            }
+          }
+        },
+        {
+          "samples": 1200,
+          "time": 87.71356105804443,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.280009296768647
+            }
+          }
+        },
+        {
+          "samples": 1300,
+          "time": 94.69605708122253,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.04321309457423
+            }
+          }
+        },
+        {
+          "samples": 1400,
+          "time": 101.82421493530273,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.883158613200937
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 111.01955819129944,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.559321784763
+            }
+          }
+        },
+        {
+          "samples": 1600,
+          "time": 119.47230315208435,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.490590209907214
+            }
+          }
+        },
+        {
+          "samples": 1700,
+          "time": 127.85850787162781,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.525228384710903
+            }
+          }
+        },
+        {
+          "samples": 1800,
+          "time": 136.2989308834076,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.37524218325487
+            }
+          }
+        },
+        {
+          "samples": 1900,
+          "time": 144.64594888687134,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.23869218737929
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 152.3259241580963,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.95982323852031
+            }
+          }
+        },
+        {
+          "samples": 2100,
+          "time": 160.1626501083374,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.015677666146562
+            }
+          }
+        },
+        {
+          "samples": 2200,
+          "time": 167.9299178123474,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.92325300556546
+            }
+          }
+        },
+        {
+          "samples": 2300,
+          "time": 175.81389999389648,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.824644036821343
+            }
+          }
+        },
+        {
+          "samples": 2400,
+          "time": 183.7162218093872,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.713301935390795
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 190.74142789840698,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.65177869864637
+            }
+          }
+        },
+        {
+          "samples": 2600,
+          "time": 197.7521457672119,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.571444875679045
+            }
+          }
+        },
+        {
+          "samples": 2700,
+          "time": 204.82175588607788,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.587530041131135
+            }
+          }
+        },
+        {
+          "samples": 2800,
+          "time": 211.9224009513855,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.52718774964982
+            }
+          }
+        },
+        {
+          "samples": 2900,
+          "time": 219.12490797042847,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.523868988572932
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 226.66139101982117,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.497604084875682
+            }
+          }
+        },
+        {
+          "samples": 3100,
+          "time": 234.2271158695221,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.472026620291455
+            }
+          }
+        },
+        {
+          "samples": 3200,
+          "time": 241.85061287879944,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.448559288238457
+            }
+          }
+        },
+        {
+          "samples": 3300,
+          "time": 249.3719310760498,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.388881910289655
+            }
+          }
+        },
+        {
+          "samples": 3400,
+          "time": 257.272656917572,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.545401840945434
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 264.5713789463043,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.476659815117337
+            }
+          }
+        },
+        {
+          "samples": 3600,
+          "time": 271.68678975105286,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.465931924965044
+            }
+          }
+        },
+        {
+          "samples": 3700,
+          "time": 279.055459022522,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.356730783413546
+            }
+          }
+        },
+        {
+          "samples": 3800,
+          "time": 286.6108248233795,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.35877823359491
+            }
+          }
+        },
+        {
+          "samples": 3900,
+          "time": 293.90845680236816,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.37722734786166
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 300.94621300697327,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.333087046198564
+            }
+          }
+        },
+        {
+          "samples": 4100,
+          "time": 308.172856092453,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.291029126478442
+            }
+          }
+        },
+        {
+          "samples": 4200,
+          "time": 315.196918964386,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.22665031957975
+            }
+          }
+        },
+        {
+          "samples": 4300,
+          "time": 322.7482569217682,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.15381028226813
+            }
+          }
+        },
+        {
+          "samples": 4400,
+          "time": 330.08968591690063,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.16368239367023
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 337.0407249927521,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.158760266404713
+            }
+          }
+        },
+        {
+          "samples": 4600,
+          "time": 343.9174919128418,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.1557064799801
+            }
+          }
+        },
+        {
+          "samples": 4700,
+          "time": 350.9471209049225,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.09729032197987
+            }
+          }
+        },
+        {
+          "samples": 4800,
+          "time": 358.00687408447266,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.12209292447245
+            }
+          }
+        },
+        {
+          "samples": 4900,
+          "time": 365.28007078170776,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.058272812854888
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 372.68472385406494,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.07419854687699
+            }
+          }
+        },
+        {
+          "samples": 5100,
+          "time": 380.37493991851807,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.00258655094793
+            }
+          }
+        },
+        {
+          "samples": 5200,
+          "time": 387.71508598327637,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.013451211477076
+            }
+          }
+        },
+        {
+          "samples": 5300,
+          "time": 395.12429904937744,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.99108108681559
+            }
+          }
+        },
+        {
+          "samples": 5400,
+          "time": 402.84700298309326,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.956468889967613
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 409.96342182159424,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.967864110441102
+            }
+          }
+        },
+        {
+          "samples": 5600,
+          "time": 417.15180492401123,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.91639944229182
+            }
+          }
+        },
+        {
+          "samples": 5700,
+          "time": 424.3993170261383,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.883363170649787
+            }
+          }
+        },
+        {
+          "samples": 5800,
+          "time": 431.5238358974457,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.90974139533819
+            }
+          }
+        },
+        {
+          "samples": 5900,
+          "time": 438.6115388870239,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.868769788396712
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 445.82293915748596,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.8295947529386
+            }
+          }
+        },
+        {
+          "samples": 6100,
+          "time": 452.9615058898926,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.810283807808393
+            }
+          }
+        },
+        {
+          "samples": 6200,
+          "time": 460.3244478702545,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.798513042831352
+            }
+          }
+        },
+        {
+          "samples": 6300,
+          "time": 467.49701285362244,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.7931619607921
+            }
+          }
+        },
+        {
+          "samples": 6400,
+          "time": 475.11666893959045,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.76976107159263
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 482.33172607421875,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.77985383589787
+            }
+          }
+        },
+        {
+          "samples": 6600,
+          "time": 489.532212972641,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.93030507585488
+            }
+          }
+        },
+        {
+          "samples": 6700,
+          "time": 496.6365978717804,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.928315204060816
+            }
+          }
+        },
+        {
+          "samples": 6800,
+          "time": 503.7722079753876,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.919335579279068
+            }
+          }
+        },
+        {
+          "samples": 6900,
+          "time": 511.22405982017517,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.089024688860462
+            }
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 518.5867440700531,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.07448509555327
+            }
+          }
+        },
+        {
+          "samples": 7100,
+          "time": 525.9597759246826,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.115461751690415
+            }
+          }
+        },
+        {
+          "samples": 7200,
+          "time": 533.4638540744781,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.076765383786274
+            }
+          }
+        },
+        {
+          "samples": 7300,
+          "time": 541.1277899742126,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.032292030468927
+            }
+          }
+        },
+        {
+          "samples": 7400,
+          "time": 548.5956220626831,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.006942970533267
+            }
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 556.2181549072266,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.954491514919226
+            }
+          }
+        },
+        {
+          "samples": 7600,
+          "time": 563.897843837738,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.919982346244108
+            }
+          }
+        },
+        {
+          "samples": 7700,
+          "time": 571.4241049289703,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.882405305935634
+            }
+          }
+        },
+        {
+          "samples": 7800,
+          "time": 579.0677390098572,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.830750482331634
+            }
+          }
+        },
+        {
+          "samples": 7900,
+          "time": 586.8472571372986,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.783180340568133
+            }
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 594.444412946701,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.75937495539291
+            }
+          }
+        },
+        {
+          "samples": 8100,
+          "time": 601.9203310012817,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.750545970923618
+            }
+          }
+        },
+        {
+          "samples": 8200,
+          "time": 609.6463749408722,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.796846857555305
+            }
+          }
+        },
+        {
+          "samples": 8300,
+          "time": 617.1611540317535,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.815395433154162
+            }
+          }
+        },
+        {
+          "samples": 8400,
+          "time": 624.8178308010101,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.804720759767886
+            }
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 632.0287511348724,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.81781637214514
+            }
+          }
+        },
+        {
+          "samples": 8600,
+          "time": 639.4154138565063,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.84129166494951
+            }
+          }
+        },
+        {
+          "samples": 8700,
+          "time": 646.9596719741821,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.816002981845667
+            }
+          }
+        },
+        {
+          "samples": 8800,
+          "time": 654.1660730838776,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.783796504130336
+            }
+          }
+        },
+        {
+          "samples": 8900,
+          "time": 661.7212090492249,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.739783987832904
+            }
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 669.1553180217743,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.736236048833437
+            }
+          }
+        },
+        {
+          "samples": 9100,
+          "time": 676.779079914093,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.701728756529068
+            }
+          }
+        },
+        {
+          "samples": 9200,
+          "time": 684.5781779289246,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.692268079713237
+            }
+          }
+        },
+        {
+          "samples": 9300,
+          "time": 692.2107367515564,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.677967816883413
+            }
+          }
+        },
+        {
+          "samples": 9400,
+          "time": 699.9657788276672,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.72182337466081
+            }
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 707.5969121456146,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.716041697608002
+            }
+          }
+        },
+        {
+          "samples": 9600,
+          "time": 715.0970759391785,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.74036857679416
+            }
+          }
+        },
+        {
+          "samples": 9700,
+          "time": 722.6582860946655,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.754931165278194
+            }
+          }
+        },
+        {
+          "samples": 9800,
+          "time": 729.9629709720612,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.734957027468294
+            }
+          }
+        },
+        {
+          "samples": 9900,
+          "time": 737.6495180130005,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.742614545417805
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 17.7522331263892
+        },
+        "samples": 10000
+      },
+      "local_final_metrics": 17.7522331263892,
+      "model_id": "e0c36b9f-737c-45c1-afc5-097a8177ba3f"
+    },
+    {
+      "dataset": "Phishing",
+      "is_synthetic": false,
+      "n_samples": 1250,
+      "task": "classification",
+      "timestamp": "2025-05-10T20:13:33.167450",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4781677722930908,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 1
+          }
+        },
+        {
+          "samples": 100,
+          "time": 8.007195949554443,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.81
+            },
+            "samples": 101
+          }
+        },
+        {
+          "samples": 200,
+          "time": 15.445598125457764,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.835
+            },
+            "samples": 201
+          }
+        },
+        {
+          "samples": 300,
+          "time": 22.709393978118896,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.84
+            },
+            "samples": 301
+          }
+        },
+        {
+          "samples": 400,
+          "time": 30.471593141555786,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.855
+            },
+            "samples": 401
+          }
+        },
+        {
+          "samples": 500,
+          "time": 38.024269819259644,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.856
+            },
+            "samples": 501
+          }
+        },
+        {
+          "samples": 600,
+          "time": 45.503775119781494,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.865
+            },
+            "samples": 601
+          }
+        },
+        {
+          "samples": 700,
+          "time": 52.9235999584198,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8757142857142857
+            },
+            "samples": 701
+          }
+        },
+        {
+          "samples": 800,
+          "time": 60.60428500175476,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.88
+            },
+            "samples": 801
+          }
+        },
+        {
+          "samples": 900,
+          "time": 68.4254858493805,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8822222222222222
+            },
+            "samples": 901
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 76.07535910606384,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.883
+            },
+            "samples": 1001
+          }
+        },
+        {
+          "samples": 1100,
+          "time": 83.56071305274963,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8845454545454545
+            },
+            "samples": 1101
+          }
+        },
+        {
+          "samples": 1200,
+          "time": 91.02374005317688,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8808333333333334
+            },
+            "samples": 1201
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.47816991806030273,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 100,
+          "time": 8.00719690322876,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.801980198019802
+            }
+          }
+        },
+        {
+          "samples": 200,
+          "time": 15.44559907913208,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8308457711442786
+            }
+          }
+        },
+        {
+          "samples": 300,
+          "time": 22.709394931793213,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8372093023255814
+            }
+          }
+        },
+        {
+          "samples": 400,
+          "time": 30.47159504890442,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8528678304239401
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 38.024271965026855,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8542914171656687
+            }
+          }
+        },
+        {
+          "samples": 600,
+          "time": 45.50377607345581,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8635607321131448
+            }
+          }
+        },
+        {
+          "samples": 700,
+          "time": 52.92360210418701,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8744650499286734
+            }
+          }
+        },
+        {
+          "samples": 800,
+          "time": 60.60428595542908,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8789013732833958
+            }
+          }
+        },
+        {
+          "samples": 900,
+          "time": 68.4254879951477,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.881243063263041
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 76.07536005973816,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8821178821178821
+            }
+          }
+        },
+        {
+          "samples": 1100,
+          "time": 83.56071400642395,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8837420526793823
+            }
+          }
+        },
+        {
+          "samples": 1200,
+          "time": 91.02374005317688,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8800999167360533
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8799039231385108
+        },
+        "samples": 1250
+      },
+      "local_final_metrics": 0.8792,
+      "model_id": "427bb030-cf6e-4a5d-bb71-3f18937a8e82"
+    },
+    {
+      "dataset": "Waveform",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-10T20:15:34.667530",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "error": "Model 8c83efff-2b91-4c0e-b449-8015eea7460e deployment timed out"
+    }
+  ]
+}

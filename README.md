@@ -4,11 +4,19 @@ This repository contains the code for running benchmarks on KappaML models.
 
 ## Running the benchmarks
 
+### Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the benchmarks
+
 ```bash
 python run_benchmarks.py
 ```
 
-## Plotting the results
+### Plotting the results
 
 ```bash
 python plot_results.py
