@@ -77,7 +77,6 @@ class KappaML:
             ModelDeploymentError: If model deployment fails or times out
         """
         model_data = {
-            "id": name,
             "name": name,
             "ml_type": ml_type
         }
