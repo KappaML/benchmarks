@@ -24,7 +24,7 @@ The results are saved in the `results/results.md` file.
 
 ### Figures
 
-The figures are saved in the `figures` directory.
+The figures are saved in the `figures` directory and individual model results as well as aggregated results.
 
 ### Regression Models
 ![Regression Results](figures/regression_results.png)
