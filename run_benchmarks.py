@@ -4,7 +4,7 @@ import json
 import datetime
 from tqdm import tqdm
 from river import datasets
-from river.metrics import Accuracy, MAPE
+from river.metrics import Accuracy, MAE
 from kappaml import (
     KappaML,
     ModelNotFoundError,
@@ -88,7 +88,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False):
         n_samples = dataset.n_samples
     
     # Intialise local metrics
-    metric = Accuracy() if task == "classification" else MAPE()
+    metric = Accuracy() if task == "classification" else MAE()
         
     result = {
         "dataset": dataset_name,
