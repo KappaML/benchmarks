@@ -1,6 +1,12 @@
 # KappaML Benchmarks
 
-This repository contains the code for running benchmarks on KappaML models.
+This repository contains the code for running benchmarks for the [KappaML](https://kappaml.com) platform.
+
+Platform: https://kappaml.com
+API Keys: https://app.kappaml.com/api-keys
+API Documentation: https://api.kappaml.com/docs
+OpenAPI Schema: https://api.kappaml.com/openapi.json
+
 
 ## Running the benchmarks
 
@@ -12,6 +18,13 @@ pip install -r requirements.txt
 
 ### Running the benchmarks
 
+Get an API key from https://app.kappaml.com/api-keys and set as env variable
+
+```bash
+export KAPPAML_API_KEY="your_api_key_here"
+```
+
+Run the benchmarks
 ```bash
 python run_benchmarks.py
 ```
