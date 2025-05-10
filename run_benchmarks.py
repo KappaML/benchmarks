@@ -19,47 +19,82 @@ from kappaml import (
 DATASETS = {
     "regression": {
         "real": [
-            # datasets.AirlinePassengers,
-            # datasets.Bikes,
+            datasets.Bikes,
             datasets.ChickWeights,
-            # datasets.MovieLens100K,
-            # datasets.Restaurants,
+            datasets.Restaurants,
             datasets.TrumpApproval,
-            # datasets.WaterFlow,
+            datasets.WaterFlow,
             # datasets.WebTraffic
         ],
         "synthetic": [
-            datasets.synth.Friedman,
-            datasets.synth.FriedmanDrift,
-            # datasets.synth.Mv,
-            # datasets.synth.Planes2D
+            datasets.synth.Friedman(
+                seed=42
+            ),
+            datasets.synth.FriedmanDrift(
+                position=(1_000, 5_000, 8_000),
+                transition_window=1_000,
+                seed=42
+            ),
+            datasets.synth.Mv(
+                seed=42
+            ),
+            datasets.synth.Planes2D(
+                seed=42
+            ),
         ],
     },
     "classification": {
         "real": [
-            # datasets.Bananas,
-            # datasets.CreditCard,
-            # datasets.Elec2,
-            # datasets.Higgs,
-            # datasets.HTTP,
-            # datasets.MaliciousURL,
+            datasets.Bananas,
+            datasets.CreditCard,
+            datasets.Elec2,
+            datasets.Higgs,
+            datasets.HTTP,
+            datasets.MaliciousURL,
             datasets.Phishing,
         ],
         "synthetic": [
-            # datasets.synth.Agrawal,
-            # datasets.synth.AnomalySine,
-            # datasets.synth.ConceptDriftStream,
-            # datasets.synth.Hyperplane,
-            # datasets.synth.Mixed,
-            # datasets.synth.SEA,
-            # datasets.synth.Sine,
-            # datasets.synth.STAGGER,
-            # datasets.synth.LED,
-            # datasets.synth.LEDDrift,
-            # datasets.synth.RandomRBF,
-            # datasets.synth.RandomRBFDrift,
-            # datasets.synth.RandomTree,
-            datasets.synth.Waveform
+            datasets.synth.Agrawal(
+                seed=42
+            ),
+            datasets.synth.AnomalySine(
+                seed=42
+            ),
+            datasets.synth.ConceptDriftStream(
+                seed=42
+            ),
+            datasets.synth.Hyperplane(
+                seed=42
+            ),
+            datasets.synth.Mixed(
+                seed=42
+            ),
+            datasets.synth.SEA(
+                seed=42
+            ),
+            datasets.synth.Sine(
+                seed=42
+            ),
+            datasets.synth.STAGGER(
+                seed=42
+            ),
+            datasets.synth.LED(
+                seed=42
+            ),
+            datasets.synth.LEDDrift(
+                seed=42
+            ),
+            datasets.synth.RandomRBF(
+                seed_model=42,
+                seed_sample=42
+            ),
+            datasets.synth.RandomRBFDrift(
+                seed_model=42,
+                seed_sample=42
+            ),
+            datasets.synth.Waveform(
+                seed=42
+            ),
         ],
     },
 }
