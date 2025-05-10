@@ -4,6 +4,7 @@ import json
 import datetime
 from tqdm import tqdm
 from river import datasets
+from river.metrics import Accuracy, MAPE
 from kappaml import (
     KappaML,
     ModelNotFoundError,
@@ -78,22 +79,32 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False):
     print(f"Running benchmark for {dataset_name}")
     print(f"Synthetic: {is_synthetic}")
     
-    n_samples = None
+    # Set number of samples to run the benchmark on
+    n_samples = 1_000
     if is_synthetic:
-        dataset = dataset().take(10_000)
-        n_samples = 10_000
+        dataset = dataset().take(n_samples)
     else:
         dataset = dataset()
         n_samples = dataset.n_samples
+    
+    # Intialise local metrics
+    metric = Accuracy() if task == "classification" else MAPE()
+        
     result = {
         "dataset": dataset_name,
         "is_synthetic": is_synthetic,
+        "n_samples": n_samples,
+        "task": task,
         "timestamp": datetime.datetime.now().isoformat(),
         "status": "completed",
         # Metrics at every 100 samples
         "metrics": [],
+        # Local metrics
+        "local_metrics": [],
         # Final metrics: metrics at the end of the dataset
-        "final_metrics": {}
+        "final_metrics": {},
+        # Local final metrics
+        "local_final_metrics": {}
     }
 
     try:
@@ -111,6 +122,9 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False):
             total=n_samples,
             desc=dataset_name
         ):
+            # Update local metrics
+            metric.update(y, client.predict(model_id, x))
+
             # Learn from the data point
             client.learn(model_id=model_id, features=x, target=y)
 
@@ -121,9 +135,15 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False):
                     "time": time.time() - start_time,
                     "metrics": metrics
                 })
+                # Update local metrics
+                result["local_metrics"].append({
+                    "time": time.time() - start_time,
+                    "metrics": metric.get()
+                })
 
         # Final metrics
         result["final_metrics"] = client.get_metrics(model_id)
+        result["local_final_metrics"] = metric.get()
 
     except (ModelNotFoundError, ModelDeploymentError) as e:
         print(f"Error during benchmark: {str(e)}")

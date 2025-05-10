@@ -179,7 +179,7 @@ class KappaML:
         elif response.status_code != 200:
             raise KappaMLError(f"Failed to get prediction: {response.text}")
             
-        return response.json()
+        return response.json()["prediction"]
     
     def get_metrics(self, model_id: str) -> Dict[str, Any]:
         """Get current metrics for a model.
