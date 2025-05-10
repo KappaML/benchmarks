@@ -7,11 +7,8 @@ from threading import Semaphore
 from tqdm import tqdm
 from river import datasets
 from river.metrics import Accuracy, MAE
-from kappaml import (
-    KappaML,
-    ModelNotFoundError,
-    ModelDeploymentError
-)
+from kappaml import KappaML
+
 
 # Get API key from https://app.kappaml.com/api-keys and set as env variable
 # export KAPPAML_API_KEY="your_api_key_here"
@@ -19,11 +16,11 @@ from kappaml import (
 DATASETS = {
     "regression": {
         "real": [
-            datasets.Bikes,
+            # datasets.Bikes,
             datasets.ChickWeights,
-            datasets.Restaurants,
+            # datasets.Restaurants,
             datasets.TrumpApproval,
-            datasets.WaterFlow,
+            # datasets.WaterFlow,
             # datasets.WebTraffic
         ],
         "synthetic": [
@@ -192,7 +189,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
             result["final_metrics"] = client.get_metrics(model_id)
             result["local_final_metrics"] = metric.get()
 
-        except (ModelNotFoundError, ModelDeploymentError) as e:
+        except Exception as e:
             print(f"Error during benchmark: {str(e)}")
             result["status"] = "failed"
             result["error"] = str(e)

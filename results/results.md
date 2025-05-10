@@ -1,11 +1,14 @@
 ### Regression Results
-| Dataset | Synthetic | Samples | MAPE@KappaML | MAPE@Local |
-| -------|---------|-------|------------|---------- |
-| ChickWeights | False | 578 | 19.1726 | 19.1726 |
-| Friedman | True | 1000 | 20.7429 | 20.7429 |
+| Dataset | Synthetic | Samples | MAE@KappaML | MAE@Local |
+| -------|---------|-------|-----------|--------- |
+| ChickWeights | False | 578 | 22.8994 | 22.8994 |
+| TrumpApproval | False | 1001 | 1.287 | 1.287 |
+| Friedman | True | 10000 | 2.0952 | 2.0952 |
+| FriedmanDrift | True | 10000 | 2.0935 | 2.0935 |
 
 ### Classification Results
 | Dataset | Synthetic | Samples | Accuracy@KappaML | Accuracy@Local |
 | -------|---------|-------|----------------|-------------- |
-| Waveform | True | 1000 | 0.8058 | 0.805 |
+| Phishing | False | 1250 | 0.9087 | 0.908 |
+| Waveform | True | 10000 | 0.812 | 0.8114 |
 
