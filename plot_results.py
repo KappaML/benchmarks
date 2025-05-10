@@ -84,7 +84,7 @@ def plot_task_results(results, task):
         plt.plot(samples, scores, label=label)
     
     plt.xlabel('Samples')
-    plt.ylabel('Score')
+    plt.ylabel(result['final_metrics']['metric']['name'])
     plt.title(f'{task.capitalize()} Models Performance')
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
@@ -104,7 +104,7 @@ def plot_individual_models(results):
         
         plt.plot(samples, scores)
         plt.xlabel('Samples')
-        plt.ylabel('Score')
+        plt.ylabel(result['final_metrics']['metric']['name'])
         title = f"{result['dataset']} "
         title += f"({'synthetic' if result['is_synthetic'] else 'real'})"
         plt.title(title)
