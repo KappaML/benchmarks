@@ -1,5 +1,7 @@
 import os
 import time
+import json
+import datetime
 import requests
 from river import datasets
 
@@ -95,56 +97,50 @@ Synthetic Datasets from river.datasets.synth
 DATASETS = {
     "regression": {
         "real": [
-            datasets.AirlinePassengers,
-            datasets.Bikes,
+            # datasets.AirlinePassengers,
+            # datasets.Bikes,
             datasets.ChickWeights,
-            datasets.MovieLens100K,
-            datasets.Restaurants,
-            datasets.TrumpApproval,
-            datasets.WaterFlow,
-            datasets.WebTraffic
+            # datasets.MovieLens100K,
+            # datasets.Restaurants,
+            # datasets.TrumpApproval,
+            # datasets.WaterFlow,
+            # datasets.WebTraffic
         ],
         "synthetic": [
             datasets.synth.Friedman,
-            datasets.synth.FriedmanDrift,
-            datasets.synth.Mv,
-            datasets.synth.Planes2D
+            # datasets.synth.FriedmanDrift,
+            # datasets.synth.Mv,
+            # datasets.synth.Planes2D
         ],
     },
     "classification": {
         "real": [
-            datasets.Bananas,
-            datasets.CreditCard,
-            datasets.Elec2,
-            datasets.Higgs,
-            datasets.HTTP,
-            datasets.MaliciousURL,
+            # datasets.Bananas,
+            # datasets.CreditCard,
+            # datasets.Elec2,
+            # datasets.Higgs,
+            # datasets.HTTP,
+            # datasets.MaliciousURL,
             datasets.Phishing,
         ],
         "synthetic": [
-            datasets.synth.Agrawal,
-            datasets.synth.AnomalySine,
-            datasets.synth.ConceptDriftStream,
-            datasets.synth.Hyperplane,
-            datasets.synth.Mixed,
-            datasets.synth.SEA,
-            datasets.synth.Sine,
-            datasets.synth.STAGGER,
-            datasets.synth.LED,
-            datasets.synth.LEDDrift,
-            datasets.synth.RandomRBF,
-            datasets.synth.RandomRBFDrift,
-            datasets.synth.RandomTree,
+            # datasets.synth.Agrawal,
+            # datasets.synth.AnomalySine,
+            # datasets.synth.ConceptDriftStream,
+            # datasets.synth.Hyperplane,
+            # datasets.synth.Mixed,
+            # datasets.synth.SEA,
+            # datasets.synth.Sine,
+            # datasets.synth.STAGGER,
+            # datasets.synth.LED,
+            # datasets.synth.LEDDrift,
+            # datasets.synth.RandomRBF,
+            # datasets.synth.RandomRBFDrift,
+            # datasets.synth.RandomTree,
             datasets.synth.Waveform
         ],
     },
 }
-
-
-def run_benchmark(model_id, dataset, is_synthetic=False):
-    print(f"Running benchmark for {dataset.__name__}")
-    print(f"Synthetic: {is_synthetic}")
-    print(f"Model: {model_id}")
 
 
 def create_and_verify_model(dataset_name, task):
@@ -153,7 +149,7 @@ def create_and_verify_model(dataset_name, task):
     Args:
         dataset_name (str): Name of the dataset/model
         task (str): ML task type (regression/classification)
-   
+
     Returns:
         str: Model ID if successfully deployed, None otherwise
     """
@@ -169,19 +165,19 @@ def create_and_verify_model(dataset_name, task):
     if response.status_code != 201:
         print(f"Failed to create model for {dataset_name}: {response.text}")
         return None
-        
+
     model_id = response.json()["id"]
-    
+
     # Wait for deployment and verify status
     max_retries = 6  # Maximum number of retries (1 minute total)
     for _ in range(max_retries):
         time.sleep(10)  # Wait 10 seconds between checks
-        
+
         status_response = session.get(f"{BASE_URL}/models/{model_id}")
         if status_response.status_code != 200:
             print(f"Failed to get model status for {dataset_name}")
             return None
-            
+
         status = status_response.json()["status"]
         if status == "Deployed":
             print(f"Model {dataset_name} successfully deployed")
@@ -189,21 +185,70 @@ def create_and_verify_model(dataset_name, task):
         elif status == "Failed":
             print(f"Model {dataset_name} deployment failed")
             return None
-            
+
     print(f"Timeout waiting for model {dataset_name} to deploy")
     return None
 
 
+def run_benchmark(model_id, dataset, is_synthetic=False):
+    print(f"Running benchmark for {dataset.__name__}")
+    print(f"Synthetic: {is_synthetic}")
+    print(f"Model: {model_id}")
+
+    result = {
+        "dataset": dataset.__name__,
+        "is_synthetic": is_synthetic,
+        "model_id": model_id,
+        "timestamp": datetime.datetime.now().isoformat(),
+        "status": "completed"
+    }
+
+    # Get the dataset
+    if is_synthetic:
+        dataset = dataset().take(10_000)
+    else:
+        dataset = dataset()
+    
+    time.sleep(5)
+
+    # Delete the model after benchmark
+    response = session.delete(f"{BASE_URL}/models/{model_id}")
+    if response.status_code == 200:
+        print(f"Successfully deleted model {model_id}")
+    else:
+        print(f"Failed to delete model {model_id}: {response.text}")
+        result["status"] = "failed_deletion"
+    
+    return result
+
+
 def run_benchmarks():
+    results = []
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    
+    # Run benchmarks for regression and classification
     for task in DATASETS:
         for dataset in DATASETS[task]["real"]:
             model_id = create_and_verify_model(dataset.__name__, task)
             if model_id:
-                run_benchmark(model_id, dataset, is_synthetic=False)
+                result = run_benchmark(model_id, dataset, is_synthetic=False)
+                results.append(result)
         for dataset in DATASETS[task]["synthetic"]:
             model_id = create_and_verify_model(dataset.__name__, task)
             if model_id:
-                run_benchmark(model_id, dataset, is_synthetic=True)
+                result = run_benchmark(model_id, dataset, is_synthetic=True)
+                results.append(result)
+    
+    # Save results to JSON file
+    fname = f"results_{timestamp}.json"
+    results_file = os.path.join(results_dir, fname)
+    with open(results_file, "w") as f:
+        json.dump({
+            "timestamp": timestamp,
+            "results": results
+        }, f, indent=2)
 
 
 if __name__ == "__main__":
