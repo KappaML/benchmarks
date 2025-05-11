@@ -230,7 +230,9 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             # Create model
             model_id = await client.create_model(
                 name=f"benchmark-{dataset_name}",
-                ml_type=task
+                ml_type=task,
+                wait_for_deployment=True,
+                timeout=120
             )
             result["model_id"] = model_id
 
