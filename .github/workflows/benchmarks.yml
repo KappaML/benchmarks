@@ -22,9 +22,18 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
+    - name: Update SSL certificates
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ca-certificates
+        sudo update-ca-certificates
+        
     - name: Run benchmarks
       env:
         KAPPAML_API_KEY: ${{ secrets.KAPPAML_API_KEY }}
+        # Add SSL verification environment variables
+        REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
+        SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
       run: python run_benchmarks.py
       
     - name: Upload benchmark results
