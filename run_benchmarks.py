@@ -191,7 +191,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
     if semaphore:
         semaphore.acquire()
     try:
-        dataset_name = dataset.__name__
+        dataset_name = dataset.__name__ or "Unknown/Friedman?"
         print(f"Running benchmark for {dataset_name} ({task}) - Synth: {is_synthetic}")
         
         # Set number of samples to run the benchmark on
@@ -199,8 +199,8 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
         if is_synthetic:
             dataset = dataset().take(n_samples)
         else:
-            dataset = dataset()
-            n_samples = dataset.n_samples
+            n_samples = min(dataset().n_samples, n_samples)
+            dataset = dataset().take(n_samples)
         
         # Intialise local metrics
         metric = Accuracy() if task == "classification" else MAE()
