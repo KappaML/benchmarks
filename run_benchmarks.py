@@ -2,6 +2,7 @@ import os
 import time
 import json
 import datetime
+import asyncio
 from concurrent.futures import ThreadPoolExecutor
 from threading import Semaphore
 from tqdm import tqdm
@@ -110,9 +111,9 @@ DATASETS = {
                 transition_window=1_000,
                 seed=42
             ),
-            datasets.synth.Mv(
-                seed=42
-            ),
+            # datasets.synth.Mv(
+            #     seed=42
+            # ),
             datasets.synth.Planes2D(
                 seed=42
             ),
@@ -175,11 +176,10 @@ DATASETS = {
 }
 
 
-def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semaphore=None):
+async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
     """Run benchmark for a single dataset.
     
     Args:
-        client: KappaML client instance
         task: ML task type (regression/classification)
         dataset: River dataset class
         is_synthetic: Whether the dataset is synthetic
@@ -207,7 +207,6 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
             n_samples = min(dataset().n_samples, n_samples)
             dataset = dataset().take(n_samples)
 
-        
         # Initialize local metrics
         metric = Accuracy() if task == "classification" else MAE()
             
@@ -218,19 +217,18 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
             "task": task,
             "timestamp": datetime.datetime.now().isoformat(),
             "status": "completed",
-            # Metrics at every 100 samples
             "metrics": [],
-            # Local metrics
             "local_metrics": [],
-            # Final metrics: metrics at the end of the dataset
             "final_metrics": {},
-            # Local final metrics
             "local_final_metrics": {}
         }
 
         try:
+            # Create async client and run event loop for API calls
+            client = KappaML()
+            
             # Create model
-            model_id = client.create_model(
+            model_id = await client.create_model(
                 name=f"benchmark-{dataset_name}",
                 ml_type=task
             )
@@ -238,20 +236,43 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
 
             # Run the benchmark
             start_time = time.time()
+            # Number of samples to process in parallel
+            batch_size = 10 
+            batch_features = []
+            batch_targets = []
+            
             for i, (x, y) in tqdm(
                 enumerate(dataset),
                 total=n_samples,
                 desc=dataset_name
             ):
-                # Update local metrics
-                metric.update(y, client.predict(model_id, x))
-
-                # Learn from the data point
-                client.learn(model_id=model_id, features=x, target=y)
-
+                batch_features.append(x)
+                batch_targets.append(y)
+                
+                # When batch is full or at end of dataset, process it
+                if len(batch_features) == batch_size or i == n_samples - 1:
+                    # Run predictions and learning in parallel
+                    predictions = await asyncio.gather(*[
+                        client.predict(model_id, x) for x in batch_features
+                    ])
+                    
+                    # Update metrics
+                    for y_true, y_pred in zip(batch_targets, predictions):
+                        metric.update(y_true, y_pred)
+                    
+                    # Run learning operations in parallel
+                    await asyncio.gather(*[
+                        client.learn(model_id=model_id, features=x, target=y) 
+                        for x, y in zip(batch_features, batch_targets)
+                    ])
+                    
+                    # Clear batches
+                    batch_features = []
+                    batch_targets = []
+                
                 # Get metrics every 250 samples
                 if i % 250 == 0:
-                    metrics = client.get_metrics(model_id)
+                    metrics = await client.get_metrics(model_id)
                     result["metrics"].append({
                         "samples": i,
                         "time": time.time() - start_time,
@@ -270,7 +291,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
                     })
 
             # Final metrics
-            result["final_metrics"] = client.get_metrics(model_id)
+            result["final_metrics"] = await client.get_metrics(model_id)
             result["local_final_metrics"] = metric.get()
 
         except Exception as e:
@@ -282,7 +303,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
             # Clean up - delete the model
             try:
                 if "model_id" in result:
-                    client.delete_model(result["model_id"])
+                    await client.delete_model(result["model_id"])
                     print(f"Successfully deleted model {result['model_id']}")
             except Exception as e:
                 print(f"Failed to delete model: {str(e)}")
@@ -294,7 +315,7 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
             semaphore.release()
 
 
-def run_worker_benchmark(task_dataset):
+async def run_worker_benchmark(task_dataset):
     """Run benchmark for a single dataset.
     
     Args:
@@ -303,23 +324,20 @@ def run_worker_benchmark(task_dataset):
     Returns:
         dict: Benchmark results for the dataset
     """
-    # Each worker gets its own KappaML client
-    client = KappaML()
-    
     # Each worker runs one benchmark at a time
     concurrent_limit = 1
     semaphore = Semaphore(concurrent_limit)
     
     task, dataset, is_synthetic = task_dataset
-    result = run_benchmark(
-        client, task, dataset, is_synthetic, 
+    result = await run_benchmark(
+        task, dataset, is_synthetic, 
         semaphore=semaphore
     )
     
     return result
 
 
-def run_benchmarks():
+async def run_benchmarks():
     """Run benchmarks for all configured datasets using parallel workers."""
     results_dir = "results"
     os.makedirs(results_dir, exist_ok=True)
@@ -337,9 +355,12 @@ def run_benchmarks():
     
     n_workers = 4
     with ThreadPoolExecutor(max_workers=n_workers) as executor:
-        futures = list(executor.map(run_worker_benchmark, all_tasks))
-        for worker_results in futures:
-            results.append(worker_results)
+        loop = asyncio.get_event_loop()
+        futures = [
+            loop.run_in_executor(executor, lambda t=t: asyncio.run(run_worker_benchmark(t)))
+            for t in all_tasks
+        ]
+        results = await asyncio.gather(*futures)
     
     # Save results to JSON file
     fname = f"results_{timestamp}.json"
@@ -352,4 +373,4 @@ def run_benchmarks():
 
 
 if __name__ == "__main__":
-    run_benchmarks()
+    asyncio.run(run_benchmarks())
