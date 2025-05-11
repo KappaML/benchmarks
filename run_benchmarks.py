@@ -200,7 +200,7 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
         print(f"Running benchmark for {dataset_name} ({task}) - Synth: {is_synthetic}")
         
         # Set number of samples to run the benchmark on
-        n_samples = 10_000
+        n_samples = 100_000
         if is_synthetic:
             dataset = dataset.take(n_samples)
         else:
@@ -237,7 +237,7 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             # Run the benchmark
             start_time = time.time()
             # Number of samples to process in parallel
-            batch_size = 10 
+            batch_size = 10
             batch_features = []
             batch_targets = []
             
