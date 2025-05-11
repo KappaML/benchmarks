@@ -123,7 +123,7 @@ DATASETS = {
             datasets.Bananas,
             datasets.CreditCard,
             datasets.Elec2,
-            # datasets.Higgs,
+            datasets.Higgs,
             datasets.HTTP,
             datasets.MaliciousURL,
             datasets.Phishing,
@@ -191,18 +191,24 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
     if semaphore:
         semaphore.acquire()
     try:
-        dataset_name = dataset.__name__ or "Unknown/Friedman?"
+        # Get dataset name
+        if is_synthetic:
+            dataset_name = dataset.__class__.__name__
+        else:
+            dataset_name = dataset.__name__
+            
         print(f"Running benchmark for {dataset_name} ({task}) - Synth: {is_synthetic}")
         
         # Set number of samples to run the benchmark on
         n_samples = 10_000
         if is_synthetic:
-            dataset = dataset().take(n_samples)
+            dataset = dataset.take(n_samples)
         else:
             n_samples = min(dataset().n_samples, n_samples)
             dataset = dataset().take(n_samples)
+
         
-        # Intialise local metrics
+        # Initialize local metrics
         metric = Accuracy() if task == "classification" else MAE()
             
         result = {
@@ -243,8 +249,8 @@ def run_benchmark(client: KappaML, task: str, dataset, is_synthetic=False, semap
                 # Learn from the data point
                 client.learn(model_id=model_id, features=x, target=y)
 
-                # Get metrics every 100 samples
-                if i % 100 == 0:
+                # Get metrics every 250 samples
+                if i % 250 == 0:
                     metrics = client.get_metrics(model_id)
                     result["metrics"].append({
                         "samples": i,
