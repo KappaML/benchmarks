@@ -126,7 +126,6 @@ DATASETS = {
             datasets.Elec2,
             datasets.Higgs,
             datasets.HTTP,
-            datasets.MaliciousURL,
             datasets.Phishing,
         ],
         "synthetic": [
