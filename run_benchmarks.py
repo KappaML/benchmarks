@@ -8,6 +8,7 @@ from threading import Semaphore
 from tqdm import tqdm
 from river import datasets
 from river.metrics import Accuracy, MAE
+from river import dummy, stats, preprocessing, linear_model, neighbors
 from kappaml import KappaML
 
 
@@ -92,6 +93,20 @@ Synthetic Datasets from river.datasets.synth
 | [Waveform](../datasets/synth/Waveform)             |         21 |         3 |
 
 """
+
+# Baseline models for comparison
+BASELINE_MODELS = {
+    "regression": {
+        "Dummy Mean": dummy.StatisticRegressor(stats.Mean()),
+        "Linear Regression": preprocessing.StandardScaler() | linear_model.LinearRegression(),
+    },
+    "classification": {
+        "Dummy No Change": dummy.NoChangeClassifier(),
+        "KNN": preprocessing.StandardScaler() | neighbors.KNNClassifier(),
+    }
+}
+
+# River datasets to run the benchmark on
 DATASETS = {
     "regression": {
         "real": [
@@ -174,6 +189,9 @@ DATASETS = {
     },
 }
 
+# Maximum number of samples to run the benchmark on
+MAX_N_SAMPLES = 10_000
+
 
 async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
     """Run benchmark for a single dataset.
@@ -199,7 +217,7 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
         print(f"Running benchmark for {dataset_name} ({task}) - Synth: {is_synthetic}")
         
         # Set number of samples to run the benchmark on
-        n_samples = 100_000
+        n_samples = MAX_N_SAMPLES
         if is_synthetic:
             dataset = dataset.take(n_samples)
         else:
@@ -219,7 +237,8 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             "metrics": [],
             "local_metrics": [],
             "final_metrics": {},
-            "local_final_metrics": {}
+            "local_final_metrics": {},
+            "baseline_results": {}
         }
 
         try:
@@ -295,6 +314,26 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             result["final_metrics"] = await client.get_metrics(model_id)
             result["local_final_metrics"] = metric.get()
 
+            # Run baseline models
+            baseline_results = {}
+            for model_name, model in BASELINE_MODELS[task].items():
+                # Create new metric instance for each baseline
+                baseline_metric = Accuracy() if task == "classification" else MAE()
+                model_start = time.time()
+                
+                for x, y in dataset:
+                    y_pred = model.predict_one(x)
+                    baseline_metric.update(y, y_pred)
+                    model.learn_one(x, y)
+                    
+                model_time = time.time() - model_start
+                baseline_results[model_name] = {
+                    "score": baseline_metric.get(),
+                    "time": model_time
+                }
+            
+            result["baseline_results"] = baseline_results
+
         except Exception as e:
             print(f"Error during benchmark: {str(e)}")
             result["status"] = "failed"
@@ -311,6 +350,7 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
                 result["status"] = "failed_deletion"
             
         return result
+        
     finally:
         if semaphore:
             semaphore.release()
