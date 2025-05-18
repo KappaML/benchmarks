@@ -93,27 +93,62 @@ def plot_task_results(results, task):
 
 
 def plot_individual_models(results):
-    """Create individual plots for each model."""
-    for result in results['results']:
-        if result['status'] != 'completed':
-            continue
+    """Create composite figures with subplots for regression and classification models."""
+    # Separate results by task
+    regression_results = [
+        r for r in results['results'] 
+        if r['task'] == 'regression' and r['status'] == 'completed'
+    ]
+    classification_results = [
+        r for r in results['results'] 
+        if r['task'] == 'classification' and r['status'] == 'completed'
+    ]
+    
+    def create_task_figure(task_results, task_name):
+        if not task_results:
+            return
             
-        plt.figure(figsize=(10, 5))
-        samples = [m['samples'] for m in result['metrics']]
-        scores = [m['metrics']['metric']['value'] for m in result['metrics']]
+        # Calculate grid dimensions
+        n_plots = len(task_results)
+        n_cols = min(3, n_plots)  # Max 3 plots per row
+        n_rows = (n_plots + n_cols - 1) // n_cols
         
-        plt.plot(samples, scores)
-        plt.xlabel('Samples')
-        plt.ylabel(result['final_metrics']['metric']['name'])
-        title = f"{result['dataset']} "
-        title += f"({'synthetic' if result['is_synthetic'] else 'real'})"
-        plt.title(title)
+        # Create figure
+        fig = plt.figure(figsize=(15, 5 * n_rows))
+        fig.suptitle(f'{task_name} Models Performance', fontsize=16, y=1.02)
+        
+        for idx, result in enumerate(task_results, 1):
+            ax = fig.add_subplot(n_rows, n_cols, idx)
+            
+            # Plot KappaML performance
+            samples = [m['samples'] for m in result['metrics']]
+            scores = [m['metrics']['metric']['value'] for m in result['metrics']]
+            ax.plot(samples, scores, label='KappaML', linewidth=2)
+            
+            # Plot baseline models
+            for baseline_name, baseline_metrics in result['baseline_metrics'].items():
+                baseline_samples = [m['samples'] for m in baseline_metrics]
+                baseline_scores = [m['metrics']['metric']['value'] for m in baseline_metrics]
+                ax.plot(baseline_samples, baseline_scores, '--', label=f'Baseline: {baseline_name}')
+            
+            ax.set_xlabel('Samples')
+            ax.set_ylabel(result['final_metrics']['metric']['name'])
+            title = f"{result['dataset']}\n"
+            title += f"({'synthetic' if result['is_synthetic'] else 'real'})"
+            ax.set_title(title)
+            ax.grid(True, alpha=0.3)
+            ax.legend(fontsize='small')
+            
         plt.tight_layout()
         
         # Save plot
-        filename = f"figures/model_{result['dataset'].lower()}.png"
-        plt.savefig(filename)
+        filename = f"figures/{task_name.lower()}_composite.png"
+        plt.savefig(filename, bbox_inches='tight', dpi=300)
         plt.close()
+    
+    # Create composite figures for each task
+    create_task_figure(regression_results, 'Regression')
+    create_task_figure(classification_results, 'Classification')
 
 
 def main():

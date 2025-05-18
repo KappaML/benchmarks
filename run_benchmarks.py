@@ -1,6 +1,7 @@
 import os
 import time
 import json
+import random
 import datetime
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
@@ -97,12 +98,12 @@ Synthetic Datasets from river.datasets.synth
 # Baseline models for comparison
 BASELINE_MODELS = {
     "regression": {
-        "Dummy Mean": dummy.StatisticRegressor(stats.Mean()),
         "Linear Regression": preprocessing.StandardScaler() | linear_model.LinearRegression(),
+        "Dummy - Mean": dummy.StatisticRegressor(stats.Mean()),
     },
     "classification": {
-        "Dummy No Change": dummy.NoChangeClassifier(),
         "KNN": preprocessing.StandardScaler() | neighbors.KNNClassifier(),
+        "Dummy - No Change": dummy.NoChangeClassifier(),
     }
 }
 
@@ -110,10 +111,10 @@ BASELINE_MODELS = {
 DATASETS = {
     "regression": {
         "real": [
-            # datasets.Bikes,
             datasets.ChickWeights,
-            # datasets.Restaurants,
             datasets.TrumpApproval,
+            # datasets.Bikes,
+            # datasets.Restaurants,
             # datasets.WaterFlow,
             # datasets.WebTraffic
         ],
@@ -238,7 +239,8 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             "local_metrics": [],
             "final_metrics": {},
             "local_final_metrics": {},
-            "baseline_results": {}
+            "baseline_metrics": {},
+            "baseline_final_metrics": {}
         }
 
         try:
@@ -246,11 +248,12 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             client = KappaML()
             
             # Create model
+            time.sleep(random.random() * 10)
             model_id = await client.create_model(
                 name=f"benchmark-{dataset_name}",
                 ml_type=task,
                 wait_for_deployment=True,
-                timeout=120
+                timeout=3 * 60
             )
             result["model_id"] = model_id
 
@@ -310,29 +313,45 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
                         }
                     })
 
-            # Final metrics
+            # # Final metrics
             result["final_metrics"] = await client.get_metrics(model_id)
             result["local_final_metrics"] = metric.get()
 
             # Run baseline models
-            baseline_results = {}
+            baseline_metrics = {}
+            baseline_final_metrics = {}
             for model_name, model in BASELINE_MODELS[task].items():
-                # Create new metric instance for each baseline
+                # Create new metric and model instance for each baseline
+                model = model.clone()
                 baseline_metric = Accuracy() if task == "classification" else MAPE()
+                baseline_metrics[model_name] = []
                 model_start = time.time()
                 
-                for x, y in dataset:
+                for i, (x, y) in tqdm(
+                    enumerate(dataset),
+                    total=n_samples,
+                    desc=f"Running baseline {model_name}"
+                ):
                     y_pred = model.predict_one(x)
                     baseline_metric.update(y, y_pred)
                     model.learn_one(x, y)
-                    
-                model_time = time.time() - model_start
-                baseline_results[model_name] = {
-                    "score": baseline_metric.get(),
-                    "time": model_time
-                }
-            
-            result["baseline_results"] = baseline_results
+                
+                    if i % 250 == 0:
+                        baseline_metrics[model_name].append({
+                            "samples": i,
+                            "time": time.time() - model_start,
+                            "metrics": {
+                                "metric": {
+                                    "name": baseline_metric.__class__.__name__,
+                                    "value": baseline_metric.get()
+                                }
+                            }
+                        })
+                
+                baseline_final_metrics[model_name] = baseline_metric.get()
+                
+            result["baseline_metrics"] = baseline_metrics
+            result["baseline_final_metrics"] = baseline_final_metrics
 
         except Exception as e:
             print(f"Error during benchmark: {str(e)}")

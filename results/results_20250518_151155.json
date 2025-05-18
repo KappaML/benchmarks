@@ -1,0 +1,6150 @@
+{
+  "timestamp": "20250518_151155",
+  "results": [
+    {
+      "dataset": "ChickWeights",
+      "is_synthetic": false,
+      "n_samples": 578,
+      "task": "regression",
+      "timestamp": "2025-05-18T15:11:55.741155",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 2a1e3128-aa9a-4689-b3be-511b788cd108 deployment timed out"
+    },
+    {
+      "dataset": "TrumpApproval",
+      "is_synthetic": false,
+      "n_samples": 1001,
+      "task": "regression",
+      "timestamp": "2025-05-18T15:11:55.741342",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 58e109cd-2624-4c67-b3c8-76209c4a0c6c deployment timed out"
+    },
+    {
+      "dataset": "Friedman",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "regression",
+      "timestamp": "2025-05-18T15:11:55.741721",
+      "status": "failed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.39540886878967285,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 5.72072696685791,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 30.587677619195556
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 9.40991497039795,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.017554558219008
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 13.086251020431519,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.02397789016458
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 25.463916063308716,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.16005617656184
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 29.678559064865112,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.98793940431208
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 39.69216704368591,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.61709248110928
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 43.40487599372864,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.661222491440288
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 47.16646599769592,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.532900423405845
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 50.559043884277344,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.013725973414154
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 54.41230893135071,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.587721962372612
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 58.12606501579285,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.516332141574363
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 61.801321029663086,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.37049265864997
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 65.4983479976654,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.165992518414104
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 69.27772688865662,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.97344169691238
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 73.03253197669983,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.846889317810906
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 76.68179297447205,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.87280533829212
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 80.32276678085327,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.783973792126538
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 84.03917384147644,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.699062870021905
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 87.7623701095581,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.650606100058454
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 91.54711389541626,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.57121326673933
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 95.77787494659424,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.5790481129619
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 99.56057906150818,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.541532838873515
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 103.31134581565857,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.70951109281685
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 106.97330784797668,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.687406059570602
+            },
+            "samples": 6000
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 111.75383615493774,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.807809224095212
+            },
+            "samples": 6250
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 116.24735593795776,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.803755243634
+            },
+            "samples": 6500
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 120.01042890548706,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.72034390688682
+            },
+            "samples": 6750
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 124.10833477973938,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.79620559364864
+            },
+            "samples": 7000
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 127.66403698921204,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.718630934575984
+            },
+            "samples": 7250
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 131.0360288619995,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.741239676329656
+            },
+            "samples": 7500
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 134.89489316940308,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.790619552211904
+            },
+            "samples": 7750
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 138.4716181755066,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.874921904137672
+            },
+            "samples": 8000
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 141.88551497459412,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.878827816292294
+            },
+            "samples": 8250
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.39540982246398926,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 5.720728158950806,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 31.630306842365684
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 9.409918069839478,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.52919347392395
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 13.086251974105835,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.366336235014032
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 25.463918209075928,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.416588751139038
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 29.67856001853943,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.194646804975868
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 39.69216799736023,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.787836954866115
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 43.40487599372864,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.807623830801596
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 47.16646718978882,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.660793128711582
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 50.55904483795166,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 19.127443944588656
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 54.4123101234436,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.690315230772498
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 58.12606596946716,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.609654071894223
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 61.8013219833374,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.456067617325612
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 65.49834895133972,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.245483143215868
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 69.27772998809814,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.04705079847379
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 73.03253293037415,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.915555864287946
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 76.681795835495,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.93710545163179
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 80.3227710723877,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.84459070619028
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 84.03917789459229,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.75611480605772
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 87.76237297058105,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.704619316339524
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 91.54711699485779,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.62249919522221
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 95.77787804603577,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.627880154156248
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 99.56057977676392,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.588249253179434
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 103.31134700775146,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.754389528160132
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 106.97330904006958,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.73050305691319
+            }
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 111.75383806228638,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.849131177733017
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 116.24735903739929,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.84340750520409
+            }
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 120.01042890548706,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.75843972175085
+            }
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 124.10833597183228,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.83290892996269
+            }
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 127.66403794288635,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.754061214572815
+            }
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 131.0360300540924,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.775481364167756
+            }
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 134.89489698410034,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.823784285833295
+            }
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 138.47162294387817,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.907123999466005
+            }
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 141.88551807403564,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 17.910048501466342
+            }
+          }
+        }
+      ],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "model_id": "5367f573-9392-4c16-b341-96957121b54f",
+      "error": "Failed to learn: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"
+    },
+    {
+      "dataset": "FriedmanDrift",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "regression",
+      "timestamp": "2025-05-18T15:11:55.741837",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4214210510253906,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 5.87771201133728,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 39.5341778506966
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 9.744253158569336,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 29.48591423132007
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 13.498719930648804,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.00561133784177
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 17.49635910987854,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 23.40008752227751
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 21.958222150802612,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.82719528753291
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 26.05894899368286,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.828037923695145
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 29.73572015762329,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.899281958422588
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 33.587260007858276,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 26.29475014655311
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 37.613288164138794,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.677147976054915
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 41.30696892738342,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.084286581369064
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 44.964619874954224,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.420606958509143
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 48.63532996177673,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 23.855661462320306
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 52.715697050094604,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 117.43035725625388
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 56.35460710525513,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 111.48570490336185
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 59.878053188323975,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 105.44781380112428
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 63.72069001197815,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 106.58297241128932
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 67.6118791103363,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 101.38706834404351
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 71.02663326263428,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 96.82094092538935
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 74.611004114151,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 92.73735199569346
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 78.63381600379944,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 88.98380618043909
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 82.20841789245605,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 86.18073886446271
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 85.90569806098938,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 83.2411294888443
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 89.54467606544495,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 81.45792909293131
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 93.51066899299622,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 79.18803179355234
+            },
+            "samples": 6000
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 97.29231810569763,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 79.07646071672659
+            },
+            "samples": 6250
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 101.19382214546204,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 76.81110325717574
+            },
+            "samples": 6500
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 105.24201893806458,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 74.87418606449032
+            },
+            "samples": 6750
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 108.71843194961548,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 73.12482307353302
+            },
+            "samples": 7000
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 112.51344108581543,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 71.43720634923336
+            },
+            "samples": 7250
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 116.42574000358582,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 69.99502176659597
+            },
+            "samples": 7500
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 120.27268409729004,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 68.53332604170024
+            },
+            "samples": 7750
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 124.1148042678833,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 67.2125675231081
+            },
+            "samples": 8000
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 127.94450902938843,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 68.47766479693612
+            },
+            "samples": 8250
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 131.52639508247375,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 68.72477711595305
+            },
+            "samples": 8500
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 135.8809859752655,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 77.01384659140888
+            },
+            "samples": 8750
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 139.76713705062866,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 77.50365890612714
+            },
+            "samples": 9000
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 143.2003800868988,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 81.45204095134928
+            },
+            "samples": 9250
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 147.24322509765625,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 81.06525470639467
+            },
+            "samples": 9500
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 150.9733431339264,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 82.22410063714415
+            },
+            "samples": 9750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.42142295837402344,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 5.877716064453125,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 31.903381330590868
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 9.744256019592285,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.665730718049158
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 13.498722076416016,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.45736106443205
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 17.496361255645752,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.484857373225694
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 21.95822501182556,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.296652688729537
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 26.058953285217285,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.550076527372802
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 29.735722303390503,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.80533635846086
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 33.58726119995117,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.337903036237
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 37.613290309906006,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.828011485416145
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 41.306971073150635,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.320373587910225
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 44.96462297439575,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 23.726355477689356
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 48.63533401489258,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 23.21925045984367
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 52.7156982421875,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 116.83269303337565
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 56.35461115837097,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 110.93036845801379
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 59.87805414199829,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 104.92963554870178
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 63.720691204071045,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 106.11095074448833
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 67.61188125610352,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 100.9429694215195
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 71.02663397789001,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 96.40116251644743
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 74.611004114151,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 92.33940588727017
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 78.63382005691528,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 88.60573255591758
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 82.20842099189758,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 85.82095974459976
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 85.9056990146637,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 82.8977809649715
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 89.54467701911926,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 81.12946303058897
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 93.51066994667053,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 78.87333926911978
+            }
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 97.29231929779053,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 78.77517375146816
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 101.19382309913635,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 76.52137932316586
+            }
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 105.24202013015747,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 74.59518153704762
+            }
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 108.7184329032898,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 72.8558120112303
+            }
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 112.51344203948975,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 71.17747216644108
+            }
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 116.42574310302734,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 69.74393123668585
+            }
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 120.27268505096436,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 68.29038762489625
+            }
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 124.11480498313904,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 66.97729192937189
+            }
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 127.94451022148132,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 68.2496627880484
+            }
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 131.52639722824097,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 68.50385322552756
+            }
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 135.8809871673584,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 76.8027804366094
+            }
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 139.7671401500702,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 77.2980226295675
+            }
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 143.20038104057312,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 81.25155684946304
+            }
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 147.24322605133057,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 80.87036783365387
+            }
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 150.97334504127502,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 82.03445856137587
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 83.24830271206146
+        },
+        "samples": 10000
+      },
+      "local_final_metrics": 83.06340268840633,
+      "baseline_results": {
+        "Dummy Mean": {
+          "score": 0.0,
+          "time": 0.0
+        },
+        "Linear Regression": {
+          "score": 0.0,
+          "time": 0.0
+        }
+      },
+      "model_id": "8a818bdf-965d-4943-8e62-e427dce61dc9"
+    },
+    {
+      "dataset": "Planes2D",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "regression",
+      "timestamp": "2025-05-18T15:13:57.376539",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 26542cd0-6317-4c4c-b74e-88a9f5af5f4c deployment timed out"
+    },
+    {
+      "dataset": "Bananas",
+      "is_synthetic": false,
+      "n_samples": 5300,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:13:57.570473",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 42d72672-599b-4739-bf00-ffa077a8b2c2 deployment timed out"
+    },
+    {
+      "dataset": "CreditCard",
+      "is_synthetic": false,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:14:58.109142",
+      "status": "failed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4210231304168701,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.5538060665130615,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 17.09626007080078,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 24.647500038146973,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9973297730307076
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 32.31102895736694,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.997997997997998
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 41.33066201210022,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9983987189751802
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 49.41284418106079,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9986657771847899
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 58.184930086135864,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9988564894225271
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 67.19722199440002,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9989994997498749
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 76.35813999176025,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9991107158737217
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 85.28122305870056,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9991996798719488
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 94.9528911113739,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9992724627137141
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 103.97564387321472,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9993331110370124
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 112.94106388092041,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9993844259772238
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 121.97657704353333,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9994284081166047
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 130.91555500030518,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9994665244065084
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 140.23623514175415,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9994998749687422
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 150.51008105278015,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9995293010120028
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 159.74326992034912,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9995554567681707
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 168.9847092628479,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9995788587070963
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 178.2294819355011,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9993998799759952
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 187.31072115898132,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.999428462564298
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 196.3304271697998,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9994544462629569
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 205.87856006622314,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.999478170116542
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 215.54970026016235,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9994999166527755
+            },
+            "samples": 6000
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 225.38290786743164,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9993598975836134
+            },
+            "samples": 6250
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 235.87881708145142,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9981535620864749
+            },
+            "samples": 6500
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.42102599143981934,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.553808212280273,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.96
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 17.096261262893677,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.98
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 24.6475031375885,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.984
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 32.31103014945984,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.988
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 41.330662965774536,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9904
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 49.412846088409424,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.992
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 58.184932231903076,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9931428571428571
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 67.19722509384155,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.994
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 76.35814094543457,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9946666666666667
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 85.28122401237488,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9952
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 94.95289397239685,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9956363636363637
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 103.97564601898193,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.996
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 112.94106602668762,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9963076923076923
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 121.97657799720764,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9965714285714286
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 130.91555619239807,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9968
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 140.23623704910278,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.997
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 150.51008415222168,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9971764705882353
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 159.74327397346497,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9973333333333333
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 168.98471403121948,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9974736842105263
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 178.229483127594,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9974
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 187.31072306632996,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9975238095238095
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 196.33042907714844,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9976363636363637
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 205.87856316566467,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9977391304347826
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 215.54970288276672,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9978333333333333
+            }
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 225.38291215896606,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.99776
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 235.87881803512573,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9966153846153846
+            }
+          }
+        }
+      ],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "model_id": "78543c10-42bf-40c4-a955-acf311177216",
+      "error": "Failed to get prediction: {\"detail\":\"Error communicating with model service\"}"
+    },
+    {
+      "dataset": "Elec2",
+      "is_synthetic": false,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:15:07.360778",
+      "status": "failed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.2815439701080322,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.313617944717407,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7751004016064257
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 14.981981992721558,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.811623246492986
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 21.435412168502808,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8477970627503337
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 27.470425128936768,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8648648648648649
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 33.483052253723145,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8670936749399519
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 40.31495928764343,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8832555036691128
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 46.74907922744751,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8805031446540881
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 52.88524007797241,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8839419709854928
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 58.853923082351685,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8750555802578924
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 65.2131609916687,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.876750700280112
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 71.97797417640686,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8806838850491088
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 78.24902200698853,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.883294431477159
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 84.63468289375305,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8811942136041859
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 90.88415503501892,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8836810517290654
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 97.30477023124695,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8871699119765271
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 103.76253008842468,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8889722430607652
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 110.23430299758911,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8891503883266652
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 116.49167609214783,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8893087352745055
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 122.81901597976685,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8892398399663087
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 129.06808304786682,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8897779555911183
+            },
+            "samples": 5000
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.28154516220092773,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.313619136810303,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.736
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 14.981983184814453,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.724
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 21.43541407585144,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.772
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 27.470428943634033,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 33.483055114746094,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8136
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 40.314960956573486,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8366666666666667
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 46.74908399581909,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8354285714285714
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 52.88524293899536,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8405
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 58.853925943374634,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8302222222222222
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 65.21316313743591,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8248
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 71.97797513008118,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8294545454545454
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 78.24902606010437,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8313333333333334
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 84.63468408584595,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8255384615384616
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 90.88415813446045,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8311428571428572
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 97.30477118492126,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8368
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 103.76253128051758,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.84075
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 110.23430514335632,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8432941176470589
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 116.49167704582214,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.844
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 122.81901717185974,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8446315789473684
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 129.06808400154114,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8466
+            }
+          }
+        }
+      ],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "model_id": "d07730ab-619a-4831-a665-e7ce3e69c42d",
+      "error": "Failed to get prediction: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"
+    },
+    {
+      "dataset": "Higgs",
+      "is_synthetic": false,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:15:58.676765",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model e5316e42-29de-4185-a883-12e88bd797e2 deployment timed out"
+    },
+    {
+      "dataset": "HTTP",
+      "is_synthetic": false,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:15:58.779723",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model fb3daa02-643d-44f8-9aee-6c13968077c7 deployment timed out"
+    },
+    {
+      "dataset": "Phishing",
+      "is_synthetic": false,
+      "n_samples": 1250,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:17:46.314217",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3580970764160156,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.63491415977478,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8232931726907631
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 14.739244222640991,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8517034068136272
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 20.51426410675049,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8758344459279038
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 26.242915153503418,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8818818818818819
+            },
+            "samples": 1000
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.35809803009033203,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.634915113449097,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.764
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 14.739245176315308,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.824
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 20.514267921447754,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8573333333333333
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 26.24291706085205,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.873
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8895116092874299
+        },
+        "samples": 1250
+      },
+      "local_final_metrics": 0.8832,
+      "baseline_results": {
+        "Dummy No Change": {
+          "score": 0.0,
+          "time": 9.5367431640625e-07
+        },
+        "KNN": {
+          "score": 0.0,
+          "time": 0.0
+        }
+      },
+      "model_id": "2e865e3b-6802-4153-ac1a-5cc942482d65"
+    },
+    {
+      "dataset": "Agrawal",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:18:04.185600",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 4640683b-c8da-4118-9152-ebbbe2688958 deployment timed out"
+    },
+    {
+      "dataset": "AnomalySine",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:18:04.309012",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 3eff96f2-cf2e-4cb1-ada5-a0d3366ca921 deployment timed out"
+    },
+    {
+      "dataset": "ConceptDriftStream",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:18:51.755384",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3508880138397217,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.840466022491455,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7831325301204819
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 15.446089029312134,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8356713426853707
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.02596402168274,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8691588785046729
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 28.417042016983032,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8938938938938938
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 35.06491494178772,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9023218574859888
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 41.318501234054565,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9106070713809206
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 47.767066955566406,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9228130360205832
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 54.50104308128357,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9269634817408704
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 60.744128942489624,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9346376167185416
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 67.33592820167542,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9395758303321329
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 73.71187615394592,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9428883230265551
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 79.86729907989502,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.946648882960987
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 86.91556310653687,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9485995690981841
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 93.16461110115051,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9511288939697057
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 99.45989990234375,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9527874099759936
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 106.07283997535706,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.95423855963991
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 112.82561898231506,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9548128971522711
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 119.56688213348389,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9555456768170705
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 126.27975392341614,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9503053274373552
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 132.82202696800232,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9439887977595519
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 139.52483415603638,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9304629453229186
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 147.08440017700195,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9174395344608111
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 153.9437770843506,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9062445642720474
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 160.37731504440308,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8988164694115686
+            },
+            "samples": 6000
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 167.28898000717163,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8969435109617538
+            },
+            "samples": 6250
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 174.24360299110413,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.897984305277735
+            },
+            "samples": 6500
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 181.1244978904724,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8993925025929768
+            },
+            "samples": 6750
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 187.51409196853638,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9019859979997142
+            },
+            "samples": 7000
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 194.724946975708,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9049524072285833
+            },
+            "samples": 7250
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 201.10157012939453,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9078543805840779
+            },
+            "samples": 7500
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 208.24010109901428,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9103110078719835
+            },
+            "samples": 7750
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 214.88468313217163,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9131141392674085
+            },
+            "samples": 8000
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 221.53088212013245,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9152624560552794
+            },
+            "samples": 8250
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 228.46944403648376,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9176373691022474
+            },
+            "samples": 8500
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 235.55732107162476,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9196479597668304
+            },
+            "samples": 8750
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 243.01456308364868,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9215468385376153
+            },
+            "samples": 9000
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 249.666766166687,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9234511839117743
+            },
+            "samples": 9250
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 256.5234549045563,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9253605642699232
+            },
+            "samples": 9500
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 263.51085209846497,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9271720176428352
+            },
+            "samples": 9750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3508899211883545,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.840469121932983,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.744
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 15.446093082427979,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.818
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.025968074798584,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8546666666666667
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 28.41704511642456,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.885
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 35.06491804122925,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8952
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 41.318503856658936,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9053333333333333
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 47.76706790924072,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9182857142857143
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 54.501047134399414,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.923
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 60.744131088256836,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9311111111111111
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 67.33593082427979,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9364
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 73.71187710762024,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.94
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 79.86729907989502,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.944
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 86.9155662059784,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9461538461538461
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 93.16461324691772,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9488571428571428
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 99.45990085601807,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9509333333333333
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 106.07284092903137,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.95275
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 112.82561993598938,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9536470588235294
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 119.5668830871582,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9544444444444444
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 126.27975606918335,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9492631578947368
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 132.82202816009521,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9432
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 139.52483797073364,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9293333333333333
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 147.0844008922577,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9158181818181819
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 153.9437780380249,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9045217391304348
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 160.37731623649597,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.897
+            }
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 167.28898096084595,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8952
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 174.24360609054565,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8963076923076924
+            }
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 181.12450003623962,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8976296296296297
+            }
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 187.51409316062927,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9002857142857142
+            }
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 194.72495007514954,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9033103448275862
+            }
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 201.10157108306885,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9062666666666667
+            }
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 208.24010181427002,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9087741935483871
+            }
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 214.88468503952026,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.911625
+            }
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 221.53088521957397,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9138181818181819
+            }
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 228.4694468975067,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.916235294117647
+            }
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 235.5573229789734,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9182857142857143
+            }
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 243.01456689834595,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9202222222222223
+            }
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 249.66676902770996,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9221621621621622
+            }
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 256.5234580039978,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9241052631578948
+            }
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 263.5108530521393,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9259487179487179
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.9287928792879288
+        },
+        "samples": 10000
+      },
+      "local_final_metrics": 0.9276,
+      "baseline_results": {
+        "Dummy No Change": {
+          "score": 0.0,
+          "time": 0.0
+        },
+        "KNN": {
+          "score": 0.0,
+          "time": 0.0
+        }
+      },
+      "model_id": "82b1ceca-ef0a-43e8-814c-8c6443dd2537"
+    },
+    {
+      "dataset": "Hyperplane",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:19:32.871863",
+      "status": "failed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3017001152038574,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.633043050765991,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7630522088353414
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 15.738757848739624,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8096192384769539
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.825704097747803,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8397863818424566
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 30.552976846694946,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8608608608608609
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 37.588521003723145,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8702962369895917
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 44.7057580947876,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8799199466310874
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 52.436903953552246,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8867924528301887
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 59.85145020484924,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8859429714857429
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 67.14987707138062,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8950644730991552
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 74.68509793281555,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8959583833533413
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 82.30585289001465,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9014186977082576
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 89.51001405715942,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9046348782927642
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 96.96148300170898,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9070483225607879
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 104.78732395172119,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9002572163475279
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 112.63955307006836,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8930381435049346
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 120.32321310043335,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8909727431857964
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 128.14597511291504,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8896210873146623
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 136.2156810760498,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8886419204267615
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 144.02863001823425,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8883975573805012
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 151.41712403297424,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8879775955191038
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 159.39169311523438,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8874071251666984
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 166.85062408447266,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8888888888888888
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 174.39810609817505,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8865889719951295
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 182.25041007995605,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8866477746291048
+            },
+            "samples": 6000
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.30170392990112305,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.633044004440308,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.732
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 15.73875904083252,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.792
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.825708150863647,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.828
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 30.552978038787842,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.852
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 37.58852505683899,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8632
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 44.705759048461914,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8746666666666667
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 52.436907052993774,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8817142857142857
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 59.85145092010498,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8815
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 67.14987802505493,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8911111111111111
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 74.68510007858276,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8928
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 82.30585408210754,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8985454545454545
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 89.51001501083374,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.902
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 96.96148610115051,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9046153846153846
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 104.7873260974884,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8971428571428571
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 112.63955402374268,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8904
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 120.3232159614563,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.88875
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 128.14597725868225,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8872941176470588
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 136.21568202972412,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8864444444444445
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 144.02863121032715,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8865263157894737
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 151.41712522506714,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.886
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 159.3916940689087,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8855238095238095
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 166.85062503814697,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8872727272727273
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 174.39810705184937,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8850434782608696
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 182.25041103363037,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8845
+            }
+          }
+        }
+      ],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "model_id": "ccb0de76-4262-4560-8f2b-66824b13ec6c",
+      "error": "Failed to get prediction: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"
+    },
+    {
+      "dataset": "Mixed",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:20:04.650806",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model c0d3a886-ae19-4dd4-a4a7-cb4ad37421bf deployment timed out"
+    },
+    {
+      "dataset": "SEA",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:20:04.786539",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model b8f39499-4926-4f5a-8b8c-4b0d076322b7 deployment timed out"
+    },
+    {
+      "dataset": "Sine",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:22:05.078870",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model d160c3ad-7995-4be0-8321-fda937551d2b deployment timed out"
+    },
+    {
+      "dataset": "STAGGER",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:22:05.292942",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 0b89190d-7584-4566-8648-e8f462f4fbff deployment timed out"
+    },
+    {
+      "dataset": "LED",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:23:12.153462",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3557140827178955,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.688041925430298,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.27710843373493976
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 15.363166093826294,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.6392785571142284
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 21.059946060180664,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7596795727636849
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 27.084934949874878,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8198198198198198
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 32.88881206512451,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.855884707766213
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 38.88712811470032,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8799199466310874
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 45.58684206008911,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8970840480274442
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 51.896281242370605,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9099549774887443
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 57.80716013908386,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9199644286349489
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 63.9967360496521,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9279711884753902
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 69.91934204101562,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.934521644234267
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 75.842031955719,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9399799933311104
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 81.90192890167236,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9445983379501385
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 87.96993589401245,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.948556730494427
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 94.18042802810669,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9519871965857563
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 100.13190197944641,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9549887471867967
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 106.49376106262207,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9576370910802542
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 112.66053009033203,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9599911091353635
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 118.94389009475708,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9620972836386608
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 125.00162625312805,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.963992798559712
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 131.2010109424591,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9657077538578777
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 137.26307106018066,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.967266775777414
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 144.36365509033203,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9686902069925204
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 150.53870010375977,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9699949991665278
+            },
+            "samples": 6000
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 156.74646401405334,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.971195391262602
+            },
+            "samples": 6250
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 162.67934393882751,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9723034312971226
+            },
+            "samples": 6500
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 168.8423581123352,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.973329382130686
+            },
+            "samples": 6750
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 174.7554759979248,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9742820402914703
+            },
+            "samples": 7000
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 180.5380940437317,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.975168988826045
+            },
+            "samples": 7250
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 186.54758715629578,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9759967995732765
+            },
+            "samples": 7500
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 192.70353198051453,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9767711962833914
+            },
+            "samples": 7750
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 198.68546319007874,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9774971871483935
+            },
+            "samples": 8000
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 204.91098308563232,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9781791732331192
+            },
+            "samples": 8250
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 210.8425259590149,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9788210377691493
+            },
+            "samples": 8500
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 216.70340299606323,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9794262201394445
+            },
+            "samples": 8750
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 222.94679808616638,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9799977775308367
+            },
+            "samples": 9000
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 228.83686900138855,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9805384365877392
+            },
+            "samples": 9250
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 234.96328806877136,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9810506369091483
+            },
+            "samples": 9500
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 240.97426795959473,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9815365678531132
+            },
+            "samples": 9750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3557162284851074,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.688043117523193,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.272
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 15.363169193267822,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.636
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 21.05995011329651,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7573333333333333
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 27.084935903549194,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.818
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 32.88881516456604,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8544
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 38.887129068374634,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8786666666666667
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 45.58684301376343,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.896
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 51.89628601074219,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.909
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 57.80716109275818,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9191111111111111
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 63.99673819541931,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9272
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 69.91934490203857,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9338181818181818
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 75.84203290939331,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9393333333333334
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 81.90193009376526,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.944
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 87.96993684768677,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.948
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 94.18043184280396,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9514666666666667
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 100.13190412521362,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9545
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 106.49376320838928,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9571764705882353
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 112.66053009033203,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9595555555555556
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 118.94389295578003,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9616842105263158
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 125.00163006782532,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9636
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 131.2010109424591,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9653333333333334
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 137.26307201385498,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9669090909090909
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 144.36365604400635,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9683478260869566
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 150.53870224952698,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9696666666666667
+            }
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 156.74646496772766,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.97088
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 162.67934608459473,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.972
+            }
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 168.84235906600952,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.973037037037037
+            }
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 174.75547695159912,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.974
+            }
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 180.53809523582458,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9748965517241379
+            }
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 186.54758715629578,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9757333333333333
+            }
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 192.70353412628174,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.976516129032258
+            }
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 198.68546414375305,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.97725
+            }
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 204.91098403930664,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9779393939393939
+            }
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 210.8425259590149,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9785882352941176
+            }
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 216.70340418815613,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9792
+            }
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 222.94679808616638,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9797777777777777
+            }
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 228.8368730545044,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9803243243243244
+            }
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 234.9632909297943,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9808421052631578
+            }
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 240.97426891326904,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9813333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.981998199819982
+        },
+        "samples": 10000
+      },
+      "local_final_metrics": 0.9818,
+      "baseline_results": {
+        "Dummy No Change": {
+          "score": 0.0,
+          "time": 9.5367431640625e-07
+        },
+        "KNN": {
+          "score": 0.0,
+          "time": 0.0
+        }
+      },
+      "model_id": "746b4c2c-8062-41a0-a1c2-58a1a92c6271"
+    },
+    {
+      "dataset": "LEDDrift",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:23:54.107405",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3662261962890625,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.598872184753418,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.27710843373493976
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 14.635785341262817,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.6392785571142284
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 20.17489004135132,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7596795727636849
+            },
+            "samples": 750
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 25.839426040649414,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8198198198198198
+            },
+            "samples": 1000
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 31.578508138656616,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.855884707766213
+            },
+            "samples": 1250
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 37.11091113090515,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8799199466310874
+            },
+            "samples": 1500
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 42.78509521484375,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8970840480274442
+            },
+            "samples": 1750
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 48.728583335876465,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9099549774887443
+            },
+            "samples": 2000
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 54.41145133972168,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9199644286349489
+            },
+            "samples": 2250
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 60.036317348480225,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9279711884753902
+            },
+            "samples": 2500
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 65.6479332447052,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.934521644234267
+            },
+            "samples": 2750
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 71.12553215026855,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9399799933311104
+            },
+            "samples": 3000
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 76.48876523971558,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9445983379501385
+            },
+            "samples": 3250
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 82.62458419799805,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.948556730494427
+            },
+            "samples": 3500
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 88.56934809684753,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9519871965857563
+            },
+            "samples": 3750
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 93.9912462234497,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9549887471867967
+            },
+            "samples": 4000
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 100.00846314430237,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9576370910802542
+            },
+            "samples": 4250
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 105.82805037498474,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9599911091353635
+            },
+            "samples": 4500
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 111.67935633659363,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9620972836386608
+            },
+            "samples": 4750
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 117.36119723320007,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.963992798559712
+            },
+            "samples": 5000
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 123.59614419937134,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9657077538578777
+            },
+            "samples": 5250
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 128.93945217132568,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.967266775777414
+            },
+            "samples": 5500
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 134.5139172077179,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9686902069925204
+            },
+            "samples": 5750
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 140.21960926055908,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9699949991665278
+            },
+            "samples": 6000
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 146.32492923736572,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.971195391262602
+            },
+            "samples": 6250
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 152.0213303565979,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9723034312971226
+            },
+            "samples": 6500
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 158.34977102279663,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.973329382130686
+            },
+            "samples": 6750
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 164.00388622283936,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9742820402914703
+            },
+            "samples": 7000
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 169.33002710342407,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.975168988826045
+            },
+            "samples": 7250
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 174.93150639533997,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9759967995732765
+            },
+            "samples": 7500
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 180.3298041820526,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9767711962833914
+            },
+            "samples": 7750
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 185.70028710365295,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9774971871483935
+            },
+            "samples": 8000
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 191.49665522575378,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9781791732331192
+            },
+            "samples": 8250
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 197.13428401947021,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9788210377691493
+            },
+            "samples": 8500
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 203.13724637031555,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9794262201394445
+            },
+            "samples": 8750
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 208.5608193874359,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9799977775308367
+            },
+            "samples": 9000
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 214.18846225738525,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9805384365877392
+            },
+            "samples": 9250
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 219.83989810943604,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9810506369091483
+            },
+            "samples": 9500
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 225.43788623809814,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9815365678531132
+            },
+            "samples": 9750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.366227388381958,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.598873138427734,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.272
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 14.635788202285767,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.636
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 20.174890995025635,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7573333333333333
+            }
+          }
+        },
+        {
+          "samples": 1000,
+          "time": 25.83942723274231,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.818
+            }
+          }
+        },
+        {
+          "samples": 1250,
+          "time": 31.578509092330933,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8544
+            }
+          }
+        },
+        {
+          "samples": 1500,
+          "time": 37.110913038253784,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8786666666666667
+            }
+          }
+        },
+        {
+          "samples": 1750,
+          "time": 42.785096406936646,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.896
+            }
+          }
+        },
+        {
+          "samples": 2000,
+          "time": 48.72858428955078,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.909
+            }
+          }
+        },
+        {
+          "samples": 2250,
+          "time": 54.411452293395996,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9191111111111111
+            }
+          }
+        },
+        {
+          "samples": 2500,
+          "time": 60.03632116317749,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9272
+            }
+          }
+        },
+        {
+          "samples": 2750,
+          "time": 65.64793419837952,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9338181818181818
+            }
+          }
+        },
+        {
+          "samples": 3000,
+          "time": 71.12553429603577,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9393333333333334
+            }
+          }
+        },
+        {
+          "samples": 3250,
+          "time": 76.48876619338989,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.944
+            }
+          }
+        },
+        {
+          "samples": 3500,
+          "time": 82.62458610534668,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.948
+            }
+          }
+        },
+        {
+          "samples": 3750,
+          "time": 88.56934928894043,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9514666666666667
+            }
+          }
+        },
+        {
+          "samples": 4000,
+          "time": 93.99124717712402,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9545
+            }
+          }
+        },
+        {
+          "samples": 4250,
+          "time": 100.00846433639526,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9571764705882353
+            }
+          }
+        },
+        {
+          "samples": 4500,
+          "time": 105.82805132865906,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9595555555555556
+            }
+          }
+        },
+        {
+          "samples": 4750,
+          "time": 111.67935729026794,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9616842105263158
+            }
+          }
+        },
+        {
+          "samples": 5000,
+          "time": 117.36119818687439,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9636
+            }
+          }
+        },
+        {
+          "samples": 5250,
+          "time": 123.59614515304565,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9653333333333334
+            }
+          }
+        },
+        {
+          "samples": 5500,
+          "time": 128.93945336341858,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9669090909090909
+            }
+          }
+        },
+        {
+          "samples": 5750,
+          "time": 134.5139183998108,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9683478260869566
+            }
+          }
+        },
+        {
+          "samples": 6000,
+          "time": 140.2196102142334,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9696666666666667
+            }
+          }
+        },
+        {
+          "samples": 6250,
+          "time": 146.32493019104004,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.97088
+            }
+          }
+        },
+        {
+          "samples": 6500,
+          "time": 152.0213303565979,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.972
+            }
+          }
+        },
+        {
+          "samples": 6750,
+          "time": 158.34977316856384,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.973037037037037
+            }
+          }
+        },
+        {
+          "samples": 7000,
+          "time": 164.00388717651367,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.974
+            }
+          }
+        },
+        {
+          "samples": 7250,
+          "time": 169.3300280570984,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9748965517241379
+            }
+          }
+        },
+        {
+          "samples": 7500,
+          "time": 174.93150734901428,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9757333333333333
+            }
+          }
+        },
+        {
+          "samples": 7750,
+          "time": 180.32980513572693,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.976516129032258
+            }
+          }
+        },
+        {
+          "samples": 8000,
+          "time": 185.70028710365295,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.97725
+            }
+          }
+        },
+        {
+          "samples": 8250,
+          "time": 191.496657371521,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9779393939393939
+            }
+          }
+        },
+        {
+          "samples": 8500,
+          "time": 197.1342852115631,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9785882352941176
+            }
+          }
+        },
+        {
+          "samples": 8750,
+          "time": 203.1372470855713,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9792
+            }
+          }
+        },
+        {
+          "samples": 9000,
+          "time": 208.56082105636597,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9797777777777777
+            }
+          }
+        },
+        {
+          "samples": 9250,
+          "time": 214.1884663105011,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9803243243243244
+            }
+          }
+        },
+        {
+          "samples": 9500,
+          "time": 219.83990240097046,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9808421052631578
+            }
+          }
+        },
+        {
+          "samples": 9750,
+          "time": 225.4378900527954,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9813333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.981998199819982
+        },
+        "samples": 10000
+      },
+      "local_final_metrics": 0.9818,
+      "baseline_results": {
+        "Dummy No Change": {
+          "score": 0.0,
+          "time": 9.5367431640625e-07
+        },
+        "KNN": {
+          "score": 0.0,
+          "time": 0.0
+        }
+      },
+      "model_id": "1415cabe-421c-456a-b66d-1fc752028658"
+    },
+    {
+      "dataset": "RandomRBF",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:24:05.698182",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 408ae06e-319e-4db5-8033-46e4793bcc29 deployment timed out"
+    },
+    {
+      "dataset": "RandomRBFDrift",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:24:05.892575",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 9861a770-151a-442f-acc0-33e7010ec3d4 deployment timed out"
+    },
+    {
+      "dataset": "Waveform",
+      "is_synthetic": true,
+      "n_samples": 10000,
+      "task": "classification",
+      "timestamp": "2025-05-18T15:26:06.039594",
+      "status": "failed",
+      "metrics": [],
+      "local_metrics": [],
+      "final_metrics": {},
+      "local_final_metrics": {},
+      "baseline_results": {},
+      "error": "Model 19186ec3-2722-4a2b-9dee-20c7e67de0a5 deployment timed out"
+    }
+  ]
+}

@@ -50,7 +50,11 @@ The figures are saved in the `figures` directory and individual model results as
 ### Regression Models
 ![Regression Results](figures/regression_results.png)
 
+![Regression Composite Results](figures/regression_composite.png)
+
 ### Classification Models  
 ![Classification Results](figures/classification_results.png)
+
+![Classification Composite Results](figures/classification_composite.png)
 
 
