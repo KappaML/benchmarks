@@ -1,30 +1,32 @@
 ### Regression Results
 | Dataset | Synthetic | Samples | MAPE@KappaML | MAPE@Local |
 | -------|---------|-------|------------|---------- |
-| ChickWeights | False | 578 | 19.4597 | 21.6981 |
-| TrumpApproval | False | 1000 | 4.1344 | 5.6117 |
-| Friedman | True | 1000 | 21.0436 | 21.4336 |
-| FriedmanDrift | True | 1000 | 20.9326 | 21.6134 |
-| Planes2D | True | 1000 | 325.8505 | 325.4651 |
+| ChickWeights | False | 578 | 19.3062 | 21.8704 |
+| TrumpApproval | False | 1001 | 3.8001 | 5.5125 |
+| Friedman | True | 20000 | 17.5655 | 17.5777 |
+| FriedmanDrift | True | 20000 | 102.3539 | 101.8227 |
+| Planes2D | True | 20000 | 307.1079 | 307.6922 |
 
 ### Classification Results
 | Dataset | Synthetic | Samples | Accuracy@KappaML | Accuracy@Local |
 | -------|---------|-------|----------------|-------------- |
-| Bananas | False | 1000 | 0.8148 | 0.806 |
-| CreditCard | False | 1000 | 0.998 | 0.988 |
-| Elec2 | False | 1000 | 0.8629 | 0.754 |
-| Higgs | False | 1000 | 0.6036 | 0.6 |
-| HTTP | False | 1000 | 1.0 | 0.99 |
-| Phishing | False | 1000 | 0.8879 | 0.876 |
-| Agrawal | True | 1000 | 0.8458 | 0.837 |
-| AnomalySine | True | 1000 | 0.979 | 0.969 |
-| ConceptDriftStream | True | 1000 | 0.8539 | 0.845 |
-| Hyperplane | True | 1000 | 0.8699 | 0.856 |
-| Mixed | True | 1000 | 0.9219 | 0.911 |
-| SEA | True | 1000 | 0.9439 | 0.944 |
-| Sine | True | 1000 | 0.9575 | 0.9495 |
-| STAGGER | True | 1000 | 0.973 | 0.956 |
-| LED | True | 1000 | 0.8208 | 0.818 |
-| LEDDrift | True | 1000 | 0.8188 | 0.818 |
-| Waveform | True | 1000 | 0.7938 | 0.791 |
+| Bananas | False | 5300 | 0.8748 | 0.8728 |
+| CreditCard | False | 20000 | 0.9957 | 0.9952 |
+| Elec2 | False | 20000 | 0.8899 | 0.8528 |
+| Higgs | False | 20000 | 0.6167 | 0.6172 |
+| HTTP | False | 20000 | 1.0 | 0.9995 |
+| Phishing | False | 1250 | 0.9015 | 0.8928 |
+| Agrawal | True | 20000 | 0.99 | 0.9891 |
+| AnomalySine | True | 20000 | 0.9817 | 0.98 |
+| ConceptDriftStream | True | 20000 | 0.9631 | 0.9628 |
+| Hyperplane | True | 20000 | 0.8909 | 0.89 |
+| Mixed | True | 20000 | 0.9855 | 0.9851 |
+| SEA | True | 20000 | 0.9873 | 0.9869 |
+| Sine | True | 20000 | 0.9832 | 0.9829 |
+| STAGGER | True | 20000 | 0.9987 | 0.9983 |
+| LED | True | 20000 | 0.9888 | 0.9888 |
+| LEDDrift | True | 20000 | 0.991 | 0.9908 |
+| RandomRBF | True | 20000 | 0.9449 | 0.9446 |
+| RandomRBFDrift | True | 20000 | 0.9439 | 0.9443 |
+| Waveform | True | 20000 | 0.8154 | 0.8161 |
 
