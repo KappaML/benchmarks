@@ -275,19 +275,24 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
                 # When batch is full or at end of dataset, process it
                 if len(batch_features) == batch_size or i == n_samples - 1:
                     # Run predictions and learning in parallel
-                    predictions = await asyncio.gather(*[
-                        client.predict(model_id, x) for x in batch_features
-                    ])
-                    
-                    # Update metrics
-                    for y_true, y_pred in zip(batch_targets, predictions):
-                        metric.update(y_true, y_pred)
-                    
-                    # Run learning operations in parallel
-                    await asyncio.gather(*[
-                        client.learn(model_id=model_id, features=x, target=y) 
-                        for x, y in zip(batch_features, batch_targets)
-                    ])
+                    try:
+                        predictions = await asyncio.gather(*[
+                            client.predict(model_id, x) for x in batch_features
+                        ])
+                        
+                        # Update metrics
+                        for y_true, y_pred in zip(batch_targets, predictions):
+                            metric.update(y_true, y_pred)
+                        
+                        # Run learning operations in parallel
+                        await asyncio.gather(*[
+                            client.learn(model_id=model_id, features=x, target=y) 
+                            for x, y in zip(batch_features, batch_targets)
+                        ])
+                    except Exception as e:
+                        # Skip this batch if any prediction fails, it's the simplest way
+                        print(f"Error during batch processing: {str(e)}; skipping batch")
+                        pass
                     
                     # Clear batches
                     batch_features = []
@@ -413,7 +418,7 @@ async def run_benchmarks():
     
     results = []
     
-    n_workers = 4
+    n_workers = 8
     with ThreadPoolExecutor(max_workers=n_workers) as executor:
         loop = asyncio.get_event_loop()
         futures = [

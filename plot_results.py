@@ -93,18 +93,27 @@ def plot_task_results(results, task):
 
 
 def plot_individual_models(results):
-    """Create composite figures with subplots for regression and classification models."""
-    # Separate results by task
-    regression_results = [
+    """Create composite figures with separate plots for real and synthetic datasets in regression
+    and classification tasks."""
+    # Separate results by task and dataset type
+    regression_real = [
         r for r in results['results'] 
-        if r['task'] == 'regression' and r['status'] == 'completed'
+        if r['task'] == 'regression' and not r['is_synthetic'] and r['status'] == 'completed'
     ]
-    classification_results = [
+    regression_synthetic = [
         r for r in results['results'] 
-        if r['task'] == 'classification' and r['status'] == 'completed'
+        if r['task'] == 'regression' and r['is_synthetic'] and r['status'] == 'completed'
+    ]
+    classification_real = [
+        r for r in results['results'] 
+        if r['task'] == 'classification' and not r['is_synthetic'] and r['status'] == 'completed'
+    ]
+    classification_synthetic = [
+        r for r in results['results'] 
+        if r['task'] == 'classification' and r['is_synthetic'] and r['status'] == 'completed'
     ]
     
-    def create_task_figure(task_results, task_name):
+    def create_task_figure(task_results, task_name, dataset_type):
         if not task_results:
             return
             
@@ -115,7 +124,8 @@ def plot_individual_models(results):
         
         # Create figure
         fig = plt.figure(figsize=(15, 5 * n_rows))
-        fig.suptitle(f'{task_name} Models Performance', fontsize=16, y=1.02)
+        title = f'{task_name} Models Performance - {dataset_type} Datasets'
+        fig.suptitle(title, fontsize=16, y=1.02)
         
         for idx, result in enumerate(task_results, 1):
             ax = fig.add_subplot(n_rows, n_cols, idx)
@@ -133,22 +143,22 @@ def plot_individual_models(results):
             
             ax.set_xlabel('Samples')
             ax.set_ylabel(result['final_metrics']['metric']['name'])
-            title = f"{result['dataset']}\n"
-            title += f"({'synthetic' if result['is_synthetic'] else 'real'})"
-            ax.set_title(title)
+            ax.set_title(f"{result['dataset']}")
             ax.grid(True, alpha=0.3)
             ax.legend(fontsize='small')
             
         plt.tight_layout()
         
         # Save plot
-        filename = f"figures/{task_name.lower()}_composite.png"
+        filename = f"figures/{task_name.lower()}_{dataset_type.lower()}_composite.png"
         plt.savefig(filename, bbox_inches='tight', dpi=300)
         plt.close()
     
-    # Create composite figures for each task
-    create_task_figure(regression_results, 'Regression')
-    create_task_figure(classification_results, 'Classification')
+    # Create composite figures for each task and dataset type
+    create_task_figure(regression_real, 'Regression', 'Real')
+    create_task_figure(regression_synthetic, 'Regression', 'Synthetic')
+    create_task_figure(classification_real, 'Classification', 'Real')
+    create_task_figure(classification_synthetic, 'Classification', 'Synthetic')
 
 
 def main():
