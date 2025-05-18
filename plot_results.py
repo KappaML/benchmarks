@@ -161,6 +161,37 @@ def plot_individual_models(results):
     create_task_figure(classification_synthetic, 'Classification', 'Synthetic')
 
 
+def plot_individual_model(result):
+    """Create individual plot for a single model."""
+    if result['status'] != 'completed':
+        return
+        
+    plt.figure(figsize=(10, 6))
+    
+    # Plot KappaML performance
+    samples = [m['samples'] for m in result['metrics']]
+    scores = [m['metrics']['metric']['value'] for m in result['metrics']]
+    plt.plot(samples, scores, label='KappaML', linewidth=2)
+    
+    # Plot baseline models
+    for baseline_name, baseline_metrics in result['baseline_metrics'].items():
+        baseline_samples = [m['samples'] for m in baseline_metrics]
+        baseline_scores = [m['metrics']['metric']['value'] for m in baseline_metrics]
+        plt.plot(baseline_samples, baseline_scores, '--', label=f'Baseline: {baseline_name}')
+    
+    plt.xlabel('Samples')
+    plt.ylabel(result['final_metrics']['metric']['name'])
+    plt.title(f"{result['dataset']} ({'synthetic' if result['is_synthetic'] else 'real'})")
+    plt.grid(True, alpha=0.3)
+    plt.legend()
+    plt.tight_layout()
+    
+    # Save individual plot
+    filename = f"figures/model_{result['dataset'].lower()}.png"
+    plt.savefig(filename, bbox_inches='tight', dpi=300)
+    plt.close()
+
+
 def main():
     # Load results
     results = get_latest_results()
@@ -176,6 +207,10 @@ def main():
     plot_task_results(results, 'regression')
     plot_task_results(results, 'classification')
     plot_individual_models(results)
+    
+    # Create individual model plots
+    for result in results['results']:
+        plot_individual_model(result)
 
 
 if __name__ == "__main__":

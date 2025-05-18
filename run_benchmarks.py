@@ -191,7 +191,7 @@ DATASETS = {
 }
 
 # Maximum number of samples to run the benchmark on
-MAX_N_SAMPLES = 10_000
+MAX_N_SAMPLES = 100_000
 
 
 async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
