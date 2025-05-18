@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from threading import Semaphore
 from tqdm import tqdm
 from river import datasets
-from river.metrics import Accuracy, MAE
+from river.metrics import Accuracy, MAPE
 from river import dummy, stats, preprocessing, linear_model, neighbors
 from kappaml import KappaML
 
@@ -225,7 +225,7 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             dataset = dataset().take(n_samples)
 
         # Initialize local metrics
-        metric = Accuracy() if task == "classification" else MAE()
+        metric = Accuracy() if task == "classification" else MAPE()
             
         result = {
             "dataset": dataset_name,
@@ -318,7 +318,7 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
             baseline_results = {}
             for model_name, model in BASELINE_MODELS[task].items():
                 # Create new metric instance for each baseline
-                baseline_metric = Accuracy() if task == "classification" else MAE()
+                baseline_metric = Accuracy() if task == "classification" else MAPE()
                 model_start = time.time()
                 
                 for x, y in dataset:
