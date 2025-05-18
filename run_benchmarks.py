@@ -42,7 +42,6 @@ Real Datasets from river.datasets
 | [Elec2](../datasets/Elec2)               | 45,312     | 8          |      |
 | [Higgs](../datasets/Higgs)               | 11,000,000 | 28         |      |
 | [HTTP](../datasets/HTTP)                 | 567,498    | 3          |      |
-| [MaliciousURL](../datasets/MaliciousURL) | 2,396,130  | 3,231,961  | ✔️   |
 | [Phishing](../datasets/Phishing)         | 1,250      | 9          |      |
 | [SMSSpam](../datasets/SMSSpam)           | 5,574      | 1          |      |
 | [SMTP](../datasets/SMTP)                 | 95,156     | 3          |      |
@@ -191,7 +190,7 @@ DATASETS = {
 }
 
 # Maximum number of samples to run the benchmark on
-MAX_N_SAMPLES = 100_000
+MAX_N_SAMPLES = 20_000
 
 
 async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
@@ -220,8 +219,10 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
         # Set number of samples to run the benchmark on
         n_samples = MAX_N_SAMPLES
         if is_synthetic:
+            dataset_class = dataset.__class__
             dataset = dataset.take(n_samples)
         else:
+            dataset_class = dataset
             n_samples = min(dataset().n_samples, n_samples)
             dataset = dataset().take(n_samples)
 
@@ -332,8 +333,18 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
                 baseline_metrics[model_name] = []
                 model_start = time.time()
                 
+                # Create fresh dataset instance for each baseline model
+                if is_synthetic:
+                    try:
+                        current_dataset = dataset_class(seed=42).take(n_samples)
+                    except TypeError:
+                        current_dataset = dataset_class(seed_model=42, seed_sample=42).take(n_samples)
+                        
+                else:
+                    current_dataset = dataset_class().take(n_samples)
+                
                 for i, (x, y) in tqdm(
-                    enumerate(dataset),
+                    enumerate(current_dataset),
                     total=n_samples,
                     desc=f"Running baseline {model_name}"
                 ):

@@ -1,0 +1,4470 @@
+{
+  "timestamp": "20250518_230412",
+  "results": [
+    {
+      "dataset": "ChickWeights",
+      "is_synthetic": false,
+      "n_samples": 578,
+      "task": "regression",
+      "timestamp": "2025-05-18T23:04:12.258785",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.8751578330993652,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 12.506132125854492,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 15.023961185686382
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.341658115386963,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.162670464991805
+            },
+            "samples": 500
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.8751590251922607,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 12.506133079528809,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.128180248813308
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.341658115386963,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 20.74754561849567
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 19.459728244205955
+        },
+        "samples": 578
+      },
+      "local_final_metrics": 21.698134455490724,
+      "baseline_metrics": {
+        "Linear Regression": [
+          {
+            "samples": 0,
+            "time": 0.0006957054138183594,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.004780769348144531,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 12.379277344143
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.009385824203491211,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 17.41254337536327
+              }
+            }
+          }
+        ],
+        "Dummy - Mean": [
+          {
+            "samples": 0,
+            "time": 0.0011887550354003906,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0018067359924316406,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 19.914578346753885
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0024209022521972656,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 30.27850173959011
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "Linear Regression": 18.90354963385301,
+        "Dummy - Mean": 32.27772257179545
+      },
+      "model_id": "6385fc3f-818a-41ca-b2f9-1c92625b38fa"
+    },
+    {
+      "dataset": "TrumpApproval",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "regression",
+      "timestamp": "2025-05-18T23:04:12.259043",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3130009174346924,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.874931335449219,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 12.987379993848409
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 17.945919036865234,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 7.255427474134121
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 23.927696228027344,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 5.184723016819525
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3130021095275879,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.874932050704956,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 18.08524315604518
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 17.94591999053955,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 9.838056968618556
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 23.927696228027344,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 7.087930188217459
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 4.134408120931955
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 5.611735586828493,
+      "baseline_metrics": {
+        "Linear Regression": [
+          {
+            "samples": 0,
+            "time": 0.0007162094116210938,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.007941007614135742,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 8.807371758887998
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.01483607292175293,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 5.348966959467657
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.02121710777282715,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 3.937712490149973
+              }
+            }
+          }
+        ],
+        "Dummy - Mean": [
+          {
+            "samples": 0,
+            "time": 0.0005078315734863281,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.001683950424194336,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 4.960052706166371
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.002833843231201172,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 4.402465772671
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.004015922546386719,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 4.133629329345457
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "Linear Regression": 3.1766548274115785,
+        "Dummy - Mean": 3.8565320620017607
+      },
+      "model_id": "02be55d2-47f0-4459-894a-c6fb22c363aa"
+    },
+    {
+      "dataset": "Friedman",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "regression",
+      "timestamp": "2025-05-18T23:04:12.259210",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4601609706878662,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.460118055343628,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 30.1374774271439
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 17.62616205215454,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.78740529453678
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 25.402223110198975,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.87039407591886
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.4601609706878662,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.460119009017944,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 31.698418979091546
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 17.626163005828857,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.56324954230056
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 25.402223110198975,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.38904028059893
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 21.0436420181083
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 21.43361678532457,
+      "baseline_metrics": {
+        "Linear Regression": [
+          {
+            "samples": 0,
+            "time": 0.00032901763916015625,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0059778690338134766,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 30.28573427800859
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.012079954147338867,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 25.014495675666577
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.018246889114379883,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 22.398180749193592
+              }
+            }
+          }
+        ],
+        "Dummy - Mean": [
+          {
+            "samples": 0,
+            "time": 0.0001506805419921875,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0009169578552246094,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 31.9681603694125
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0016789436340332031,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 35.99728809198378
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0024459362030029297,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 35.983727602373605
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "Linear Regression": 21.676741719495325,
+        "Dummy - Mean": 38.01974357291579
+      },
+      "model_id": "329a91dc-cfb8-4eee-93be-5ac81eece073"
+    },
+    {
+      "dataset": "FriedmanDrift",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "regression",
+      "timestamp": "2025-05-18T23:04:12.259459",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3985300064086914,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.458980083465576,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 29.686561698700714
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 13.513900995254517,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 24.555870766941602
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.86534285545349,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 21.71741794556605
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3985319137573242,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 6.4589807987213135,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 32.417722428531064
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 13.513901948928833,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 25.922901267028607
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.865343809127808,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 22.62880809708429
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 20.932554798620988
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 21.6134426476957,
+      "baseline_metrics": {
+        "Linear Regression": [
+          {
+            "samples": 0,
+            "time": 0.0006849765777587891,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.008230209350585938,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 30.28573427800859
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.015199899673461914,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 25.014495675666577
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.021757841110229492,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 22.398180749193592
+              }
+            }
+          }
+        ],
+        "Dummy - Mean": [
+          {
+            "samples": 0,
+            "time": 0.00017976760864257812,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0011048316955566406,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 31.9681603694125
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.002033710479736328,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 35.99728809198378
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.002950906753540039,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 35.983727602373605
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "Linear Regression": 21.676741719495325,
+        "Dummy - Mean": 38.01974357291579
+      },
+      "model_id": "5db167c1-9ab4-48f8-96e6-004d8a72ade3"
+    },
+    {
+      "dataset": "Planes2D",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "regression",
+      "timestamp": "2025-05-18T23:04:12.259862",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.5455811023712158,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 11.988433837890625,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 485.69975912021823
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 18.913529872894287,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 296.5025992270921
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 24.482300996780396,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 312.4238433048681
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.5455818176269531,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 11.98843502998352,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 496.6749387685484
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 18.913530826568604,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 301.8210349032568
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 24.482300996780396,
+          "metrics": {
+            "metric": {
+              "name": "MAPE",
+              "value": 317.62629690856403
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "MAPE",
+          "value": 325.850498280599
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 325.46508432603997,
+      "baseline_metrics": {
+        "Linear Regression": [
+          {
+            "samples": 0,
+            "time": 0.00041604042053222656,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.009364128112792969,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 481.6428694955366
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.01788616180419922,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 296.0428723511203
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.026028156280517578,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 307.09773472103905
+              }
+            }
+          }
+        ],
+        "Dummy - Mean": [
+          {
+            "samples": 0,
+            "time": 0.0001690387725830078,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 100.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0016360282897949219,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 137.85663836805102
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0030670166015625,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 120.82061990332068
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.004472017288208008,
+            "metrics": {
+              "metric": {
+                "name": "MAPE",
+                "value": 120.51724825656953
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "Linear Regression": 319.9948967751394,
+        "Dummy - Mean": 119.45333641947894
+      },
+      "model_id": "1478d595-dd59-47ec-9e27-de15a4e1cd68"
+    },
+    {
+      "dataset": "Bananas",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:04:12.260230",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3714280128479004,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 11.281031131744385,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.5903614457831325
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 23.621901035308838,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7374749498997996
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 30.922354221343994,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7850467289719626
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3714292049407959,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 11.281031131744385,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.576
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 23.621901988983154,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.724
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 30.92235517501831,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7733333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8148148148148148
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.806,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0016713142395019531,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.048197269439697266,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8007968127490039
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.995927095413208,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8323353293413174
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.1451430320739746,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8535286284953395
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0008819103240966797,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0013189315795898438,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5617529880478087
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0018880367279052734,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.562874251497006
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0024318695068359375,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5539280958721704
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.865,
+        "Dummy - No Change": 0.552
+      },
+      "model_id": "4f8d6f70-4421-40f2-ba6f-80e8e0720b74"
+    },
+    {
+      "dataset": "CreditCard",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:04:12.260329",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.5436441898345947,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.737228155136108,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 23.809431076049805,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 36.02223515510559,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9973297730307076
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.5436451435089111,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.737229108810425,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.96
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 23.8094322681427,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.98
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 36.022238969802856,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.984
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.997997997997998
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.988,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0011858940124511719,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.18981289863586426,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9960159362549801
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 2.0429489612579346,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.998003992015968
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 2.934208869934082,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.996005326231691
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0009279251098632812,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.003133058547973633,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9960159362549801
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0056879520416259766,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.998003992015968
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.00780797004699707,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9933422103861518
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.997,
+        "Dummy - No Change": 0.995
+      },
+      "model_id": "bd3b7020-7a92-4958-bf4d-ed3fb6f6663f"
+    },
+    {
+      "dataset": "Elec2",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:04:12.260410",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3342249393463135,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.767544031143188,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8192771084337349
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.626049995422363,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8396793587174348
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 30.126912117004395,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8437917222963952
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3342258930206299,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.767544746398926,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.6260507106781,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.702
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 30.126912117004395,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7066666666666667
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8628628628628628
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.754,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0009701251983642578,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.06791210174560547,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8406374501992032
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.2167448997497559,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8782435129740519
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.450998067855835,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8748335552596538
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0027091503143310547,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.003448963165283203,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8605577689243028
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.004195213317871094,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8702594810379242
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.004960060119628906,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8548601864181092
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.874,
+        "Dummy - No Change": 0.859
+      },
+      "model_id": "07aea3ac-e589-4ff3-bae8-8f5503988a63"
+    },
+    {
+      "dataset": "Higgs",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:11.847186",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4731259346008301,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.735891819000244,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.5823293172690763
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 24.625504732131958,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.6212424849699398
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 36.91394782066345,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.6088117489986649
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.4731268882751465,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.73589301109314,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.568
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 24.625505685806274,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.612
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 36.91394877433777,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.604
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.6036036036036037
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.6,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0012352466583251953,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.18046331405639648,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5697211155378487
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 2.114023208618164,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5888223552894212
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 3.5655553340911865,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5898801597869507
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0008909702301025391,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.006292104721069336,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.450199203187251
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.01170492172241211,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5049900199600799
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.017006874084472656,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5006657789613849
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.581,
+        "Dummy - No Change": 0.489
+      },
+      "model_id": "c3682586-cdd0-4a0e-8880-7df2112901a2"
+    },
+    {
+      "dataset": "HTTP",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:12.070097",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.39527106285095215,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 7.415911912918091,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 16.400267124176025,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.708046913146973,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 1.0
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.39527201652526855,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 7.415914058685303,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.96
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 16.400267839431763,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.98
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 22.70804786682129,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9866666666666667
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 1.0
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.99,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0006451606750488281,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.04104423522949219,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9960159362549801
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.105018138885498,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.998003992015968
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.2660021781921387,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9986684420772304
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0017230510711669922,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0023317337036132812,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9960159362549801
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0029828548431396484,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.998003992015968
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0036399364471435547,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9986684420772304
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.999,
+        "Dummy - No Change": 0.999
+      },
+      "model_id": "cf2f766a-9814-4b83-97ea-462158f78a35"
+    },
+    {
+      "dataset": "Phishing",
+      "is_synthetic": false,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:20.087081",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4221458435058594,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.528563022613525,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8433734939759037
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 18.905089855194092,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.875751503006012
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.23857593536377,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8931909212283045
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.4221467971801758,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.528563976287842,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 18.905090808868408,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.852
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.23857808113098,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8746666666666667
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8878878878878879
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.876,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0006401538848876953,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.07206892967224121,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8207171314741036
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.2650928497314453,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.844311377245509
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.556506872177124,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8668442077230359
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.000965118408203125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.00186920166015625,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5179282868525896
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.002753019332885742,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5349301397205589
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.00362396240234375,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5366178428761651
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.875,
+        "Dummy - No Change": 0.518
+      },
+      "model_id": "b54ca314-0895-41e5-998d-ba034d12b0da"
+    },
+    {
+      "dataset": "Agrawal",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:24.636342",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.5127248764038086,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.667274951934814,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7791164658634538
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 22.170481204986572,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8336673346693386
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 30.696024179458618,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8331108144192256
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.5127260684967041,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.66727614402771,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.744
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 22.17048192024231,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.818
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 30.696025133132935,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8213333333333334
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8458458458458459
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.837,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0003428459167480469,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.07999587059020996,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.649402390438247
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.3618566989898682,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.6706586826347305
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.7275409698486328,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7070572569906791
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.000202178955078125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.006742954254150391,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5338645418326693
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.012949228286743164,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5708582834331337
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.01944112777709961,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5672436750998668
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.725,
+        "Dummy - No Change": 0.571
+      },
+      "model_id": "e9c8e26e-de81-4e9b-81b2-d434f5b7282f"
+    },
+    {
+      "dataset": "AnomalySine",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:25.591817",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.2962911128997803,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 7.393196105957031,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9678714859437751
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 16.42352604866028,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.969939879759519
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 24.311635971069336,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9786381842456608
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.2962923049926758,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 7.393197059631348,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.932
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 16.42352604866028,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.95
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 24.31163716316223,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9653333333333334
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.978978978978979
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.969,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0012788772583007812,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.04453611373901367,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9601593625498008
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.12223482131958,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9660678642714571
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.2784528732299805,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9733688415446072
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.002708911895751953,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0030059814453125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7171314741035857
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.003297090530395508,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.6786427145708582
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.003589153289794922,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7003994673768309
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.976,
+        "Dummy - No Change": 0.683
+      },
+      "model_id": "55c9a6ad-8ce7-49fe-86a0-1f5c3c09b4a4"
+    },
+    {
+      "dataset": "ConceptDriftStream",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:25.768672",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.33754491806030273,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.050280809402466,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7991967871485943
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.168901681900024,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.843687374749499
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 38.123432874679565,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8477970627503337
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.33754587173461914,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.050282001495361,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.768
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.168903827667236,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.83
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 38.12343382835388,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8333333333333334
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8538538538538538
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.845,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0013880729675292969,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.09808111190795898,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.649402390438247
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.2888660430908203,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.6706586826347305
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.6501901149749756,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7070572569906791
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.00020813941955566406,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.006528139114379883,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5338645418326693
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.01266622543334961,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5708582834331337
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.018865108489990234,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5672436750998668
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.725,
+        "Dummy - No Change": 0.571
+      },
+      "model_id": "82814e32-f091-44d8-a4c2-6c493a402d57"
+    },
+    {
+      "dataset": "Hyperplane",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:30.661451",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4229738712310791,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.068742752075195,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7911646586345381
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.283134937286377,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8276553106212425
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 32.56899356842041,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8518024032042724
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.4229748249053955,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.06874394416809,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.748
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.283135890960693,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 32.568994760513306,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8333333333333334
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8698698698698699
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.856,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.00031185150146484375,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.07960200309753418,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.6772908366533864
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 2.0511510372161865,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7305389221556886
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 3.033841133117676,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7536617842876165
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0001652240753173828,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0008051395416259766,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5298804780876494
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0014579296112060547,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.49700598802395207
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0021271705627441406,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.4940079893475366
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.764,
+        "Dummy - No Change": 0.472
+      },
+      "model_id": "321ba741-21f4-4ff4-8a51-e75ab2a29c2d"
+    },
+    {
+      "dataset": "Mixed",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:05:42.756821",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.5523757934570312,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.22394871711731,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8795180722891566
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.451106786727905,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9258517034068137
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.279356002807617,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9118825100133512
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.5523757934570312,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.22394871711731,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.84
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.45110774040222,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.906
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.279356956481934,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8973333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.9219219219219219
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.911,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.00024008750915527344,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.04726719856262207,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9043824701195219
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.1788010597229004,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9421157684630739
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.3582379817962646,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9454061251664447
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0001552104949951172,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0005102157592773438,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.4900398406374502
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0008623600006103516,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.46706586826347307
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0012123584747314453,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.4766977363515313
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.951,
+        "Dummy - No Change": 0.475
+      },
+      "model_id": "1d60a15e-178f-4a80-8828-ed2624ef835a"
+    },
+    {
+      "dataset": "SEA",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:06:14.731235",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3292551040649414,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 7.825724124908447,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8955823293172691
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 16.62806510925293,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9176706827309237
+            },
+            "samples": 499
+          }
+        },
+        {
+          "samples": 750,
+          "time": 26.48742699623108,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9331550802139037
+            },
+            "samples": 749
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3292562961578369,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 7.825727939605713,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.892
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 16.628066062927246,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.92
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 26.487428188323975,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9333333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.9438877755511023
+        },
+        "samples": 999
+      },
+      "local_final_metrics": 0.944,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.00022602081298828125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.04345297813415527,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.896414342629482
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.0818891525268555,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.936127744510978
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.2586650848388672,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9427430093209055
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.000164031982421875,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0005741119384765625,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5697211155378487
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0009481906890869141,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5768463073852296
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0013239383697509766,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5792276964047937
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.95,
+        "Dummy - No Change": 0.583
+      },
+      "model_id": "0a7e3164-5ffa-4ddc-9908-98fd09d06d13"
+    },
+    {
+      "dataset": "Sine",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:06:24.810626",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.561614990234375,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.868801832199097,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.891566265060241
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.868664026260376,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9338677354709419
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 31.94382095336914,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.951935914552737
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.5616159439086914,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.868803024291992,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.868
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.868664979934692,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.92
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 31.943821907043457,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9426666666666667
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.9575328614762386
+        },
+        "samples": 990
+      },
+      "local_final_metrics": 0.9494949494949495,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0007920265197753906,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.03689289093017578,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9362549800796812
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.0795960426330566,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9540918163672655
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.2290358543395996,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9653794940079894
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0002906322479248047,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0006167888641357422,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.4940239043824701
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0009326934814453125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5089820359281437
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0012569427490234375,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.5233022636484687
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.967,
+        "Dummy - No Change": 0.519
+      },
+      "model_id": "8ca97b1e-3e24-42e1-b7d8-8f1d651042d7"
+    },
+    {
+      "dataset": "STAGGER",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:06:30.392922",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.265516996383667,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.472247123718262,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.891566265060241
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 18.322190046310425,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9458917835671342
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.36527705192566,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9639519359145527
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.2655181884765625,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.472248077392578,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.824
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 18.322190761566162,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.912
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.365278005599976,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.9413333333333334
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.972972972972973
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.956,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.006654977798461914,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.07836079597473145,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9800796812749004
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 2.1483519077301025,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9900199600798403
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 2.4414749145507812,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9933422103861518
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.006633281707763672,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.007218122482299805,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7729083665338645
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0077381134033203125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8023952095808383
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.008294105529785156,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.8322237017310253
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.995,
+        "Dummy - No Change": 0.812
+      },
+      "model_id": "ca8b0d57-1487-44d8-8a64-be8f271e2793"
+    },
+    {
+      "dataset": "LED",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:06:38.269280",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.22245383262634277,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.087918996810913,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.28112449799196787
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.140034914016724,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.6412825651302605
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 29.345212936401367,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7610146862483311
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.22245502471923828,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.08791995048523,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.272
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.14003610610962,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.636
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 29.345213890075684,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7573333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8208208208208209
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.818,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0004189014434814453,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.07167696952819824,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9561752988047809
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.2601449489593506,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9780439121756487
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.4801239967346191,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9587217043941412
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0001761913299560547,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0007190704345703125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.099601593625498
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0012669563293457031,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.10778443113772455
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.0018281936645507812,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.10652463382157124
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.955,
+        "Dummy - No Change": 0.106
+      },
+      "model_id": "7521e04a-ef15-467a-92e6-6664ca37d14b"
+    },
+    {
+      "dataset": "LEDDrift",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:06:48.599234",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.4500598907470703,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 12.858245849609375,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.27309236947791166
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 23.795448064804077,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.6372745490981964
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 36.012221813201904,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7583444592790387
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.4500610828399658,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 12.858246803283691,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.272
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 23.795449018478394,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.636
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 36.012223958969116,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7573333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8188188188188188
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.818,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.0004661083221435547,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.07478523254394531,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9561752988047809
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.1895191669464111,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9780439121756487
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 1.3890020847320557,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.9400798934753661
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.00018787384033203125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.0008108615875244141,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.099601593625498
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.0014929771423339844,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.10778443113772455
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.002198934555053711,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.10652463382157124
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.931,
+        "Dummy - No Change": 0.106
+      },
+      "model_id": "75958b90-0a35-4b5f-9571-a9aa71f208cc"
+    },
+    {
+      "dataset": "RandomRBF",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:07:27.850618",
+      "status": "failed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3802640438079834,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.476600170135498,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7670682730923695
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.573068141937256,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8537074148296593
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 29.793992042541504,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8798397863818425
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3802649974822998,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 9.47660207748413,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.756
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 21.573069095611572,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.848
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 29.79399299621582,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.876
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8968968968968969
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.894,
+      "baseline_metrics": {},
+      "baseline_final_metrics": {},
+      "model_id": "14a8f7d0-a3a5-40c4-b12e-5772fe0021f3",
+      "error": "RandomRBF.__init__() got an unexpected keyword argument 'seed'"
+    },
+    {
+      "dataset": "RandomRBFDrift",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:07:30.923303",
+      "status": "failed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.340590238571167,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.599751949310303,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7630522088353414
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.07215905189514,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8517034068136272
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.391376972198486,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.8785046728971962
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3405928611755371,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 8.599754095077515,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.756
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 20.072160005569458,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.848
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 28.391377925872803,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.876
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.8958958958958959
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.894,
+      "baseline_metrics": {},
+      "baseline_final_metrics": {},
+      "model_id": "f246e2cf-a600-4a41-b3d0-b2232af1e7d5",
+      "error": "RandomRBFDrift.__init__() got an unexpected keyword argument 'seed'"
+    },
+    {
+      "dataset": "Waveform",
+      "is_synthetic": true,
+      "n_samples": 1000,
+      "task": "classification",
+      "timestamp": "2025-05-18T23:07:37.256149",
+      "status": "completed",
+      "metrics": [
+        {
+          "samples": 0,
+          "time": 0.3352029323577881,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            },
+            "samples": 0
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.283861875534058,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7670682730923695
+            },
+            "samples": 250
+          }
+        },
+        {
+          "samples": 500,
+          "time": 22.5868718624115,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7935871743486974
+            },
+            "samples": 500
+          }
+        },
+        {
+          "samples": 750,
+          "time": 32.84089279174805,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7930574098798397
+            },
+            "samples": 750
+          }
+        }
+      ],
+      "local_metrics": [
+        {
+          "samples": 0,
+          "time": 0.3352041244506836,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.0
+            }
+          }
+        },
+        {
+          "samples": 250,
+          "time": 10.283863067626953,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.756
+            }
+          }
+        },
+        {
+          "samples": 500,
+          "time": 22.586873054504395,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.79
+            }
+          }
+        },
+        {
+          "samples": 750,
+          "time": 32.84089398384094,
+          "metrics": {
+            "metric": {
+              "name": "Accuracy",
+              "value": 0.7893333333333333
+            }
+          }
+        }
+      ],
+      "final_metrics": {
+        "metric": {
+          "name": "Accuracy",
+          "value": 0.7937937937937938
+        },
+        "samples": 1000
+      },
+      "local_final_metrics": 0.791,
+      "baseline_metrics": {
+        "KNN": [
+          {
+            "samples": 0,
+            "time": 0.00039887428283691406,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.1377849578857422,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7569721115537849
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 1.6409711837768555,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.782435129740519
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 2.34067702293396,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.7789613848202397
+              }
+            }
+          }
+        ],
+        "Dummy - No Change": [
+          {
+            "samples": 0,
+            "time": 0.0001850128173828125,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.0
+              }
+            }
+          },
+          {
+            "samples": 250,
+            "time": 0.002620220184326172,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.33067729083665337
+              }
+            }
+          },
+          {
+            "samples": 500,
+            "time": 0.005244255065917969,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.3333333333333333
+              }
+            }
+          },
+          {
+            "samples": 750,
+            "time": 0.007619142532348633,
+            "metrics": {
+              "metric": {
+                "name": "Accuracy",
+                "value": 0.3382157123834887
+              }
+            }
+          }
+        ]
+      },
+      "baseline_final_metrics": {
+        "KNN": 0.778,
+        "Dummy - No Change": 0.341
+      },
+      "model_id": "8223df21-ddfc-4e63-a2e1-91ff27864ec7"
+    }
+  ]
+}
