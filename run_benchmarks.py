@@ -193,6 +193,45 @@ DATASETS = {
 MAX_N_SAMPLES = 20_000
 
 
+def create_dataset_instance(dataset_class, dataset_name, is_synthetic, n_samples):
+    """Create a fresh dataset instance with appropriate parameters.
+    
+    Args:
+        dataset_class: The dataset class to instantiate
+        dataset_name: Name of the dataset
+        is_synthetic: Whether it's a synthetic dataset
+        n_samples: Number of samples to take
+        
+    Returns:
+        A dataset instance limited to n_samples
+    """
+    if is_synthetic:
+        if dataset_name == "FriedmanDrift":
+            return dataset_class(
+                position=(1_000, 5_000, 8_000),
+                transition_window=1_000,
+                seed=42
+            ).take(n_samples)
+        elif dataset_name in ["RandomRBF", "RandomRBFDrift"]:
+            return dataset_class(
+                seed_model=42, 
+                seed_sample=42
+            ).take(n_samples)
+        else:
+            try:
+                return dataset_class(seed=42).take(n_samples)
+            except TypeError:
+                # Fallback for other datasets with special parameters
+                print(f"Warning: Special parameter handling needed for {dataset_name}")
+                return dataset_class(
+                    seed_model=42, 
+                    seed_sample=42
+                ).take(n_samples)
+    else:
+        # Real datasets
+        return dataset_class().take(n_samples)
+
+
 async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
     """Run benchmark for a single dataset.
     
@@ -211,20 +250,20 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
         # Get dataset name
         if is_synthetic:
             dataset_name = dataset.__class__.__name__
+            dataset_class = dataset.__class__
         else:
             dataset_name = dataset.__name__
+            dataset_class = dataset
             
         print(f"Running benchmark for {dataset_name} ({task}) - Synth: {is_synthetic}")
         
         # Set number of samples to run the benchmark on
         n_samples = MAX_N_SAMPLES
         if is_synthetic:
-            dataset_class = dataset.__class__
             dataset = dataset.take(n_samples)
         else:
-            dataset_class = dataset
             n_samples = min(dataset().n_samples, n_samples)
-            dataset = dataset().take(n_samples)
+            dataset = create_dataset_instance(dataset_class, dataset_name, is_synthetic, n_samples)
 
         # Initialize local metrics
         metric = Accuracy() if task == "classification" else MAPE()
@@ -334,14 +373,9 @@ async def run_benchmark(task: str, dataset, is_synthetic=False, semaphore=None):
                 model_start = time.time()
                 
                 # Create fresh dataset instance for each baseline model
-                if is_synthetic:
-                    try:
-                        current_dataset = dataset_class(seed=42).take(n_samples)
-                    except TypeError:
-                        current_dataset = dataset_class(seed_model=42, seed_sample=42).take(n_samples)
-                        
-                else:
-                    current_dataset = dataset_class().take(n_samples)
+                current_dataset = create_dataset_instance(
+                    dataset_class, dataset_name, is_synthetic, n_samples
+                )
                 
                 for i, (x, y) in tqdm(
                     enumerate(current_dataset),
