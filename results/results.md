@@ -1,31 +1,28 @@
 ### Regression Results
 | Dataset | Synthetic | Samples | MAPE@KappaML | MAPE@Local | MAPE@Linear Regression |
 | -------|---------|-------|------------|----------|---------------------- |
-| ChickWeights | False | 578 | 2584495987813.108 | 1317466295901.1863 | 17.4125 |
-| TrumpApproval | False | 1001 | 1.353044110044226e+21 | 2.4713794948088206e+21 | 3.1738 |
-| Friedman | True | 20000 | 14.4143 | 14.4419 | 18.714 |
-| FriedmanDrift | True | 20000 | 56.7889 | 57.0384 | 92.7029 |
-| Planes2D | True | 20000 | 126.0944 | 127.7582 | 305.3394 |
+| ChickWeights | False | 578 | 19.5874 | 22.0748 | 17.4125 |
+| TrumpApproval | False | 1001 | 3.9354 | 5.3793 | 3.1738 |
+| Friedman | True | 20000 | 14.4548 | 14.4905 | 18.714 |
+| FriedmanDrift | True | 20000 | 54.287 | 54.3505 | 92.7029 |
+| Planes2D | True | 20000 | 124.225 | 123.9622 | 305.3394 |
 
 ### Classification Results
 | Dataset | Synthetic | Samples | Accuracy@KappaML | Accuracy@Local | Accuracy@KNN |
 | -------|---------|-------|----------------|--------------|------------ |
-| Bananas | False | 5300 | 0.8783 | 0.8777 | 0.885 |
-| CreditCard | False | 20000 | 0.9923 | 0.992 | 0.9981 |
-| Elec2 | False | 20000 | 0.8649 | 0.8477 | 0.8707 |
+| Bananas | False | 5300 | 0.8802 | 0.8783 | 0.8854 |
+| CreditCard | False | 20000 | 0.9923 | 0.9915 | 0.9982 |
+| Elec2 | False | 20000 | 0.8644 | 0.842 | 0.8711 |
+| Higgs | False | 20000 | 0.6156 | 0.6163 | 0.5635 |
 | HTTP | False | 20000 | 1.0 | 1.0 | 0.9999 |
-| Phishing | False | 1250 | 0.8664 | 0.8608 | 0.8751 |
-| Agrawal | True | 20000 | 0.9871 | 0.9869 | 0.7895 |
-| AnomalySine | True | 20000 | 0.9804 | 0.9808 | 0.9799 |
-| ConceptDriftStream | True | 20000 | 0.9596 | 0.9591 | 0.7948 |
-| Hyperplane | True | 20000 | 0.9389 | 0.9386 | 0.8181 |
-| Mixed | True | 20000 | 0.9842 | 0.9843 | 0.9193 |
-| SEA | True | 20000 | 0.9913 | 0.9915 | 0.9704 |
-| Sine | True | 20000 | 0.9762 | 0.9763 | 0.9873 |
-| STAGGER | True | 20000 | 0.9954 | 0.9953 | 0.9578 |
-| LED | True | 20000 | 0.9912 | 0.991 | 0.8053 |
-| LEDDrift | True | 20000 | 0.9912 | 0.9905 | 0.8174 |
-| RandomRBF | True | 20000 | 0.9388 | 0.9377 | 0.9289 |
-| RandomRBFDrift | True | 20000 | 0.9415 | 0.9434 | 0.9285 |
-| Waveform | True | 20000 | 0.7977 | 0.7979 | 0.7997 |
+| Phishing | False | 1250 | 0.8488 | 0.8439 | 0.8751 |
+| Agrawal | True | 20000 | 0.9872 | 0.987 | 0.7897 |
+| AnomalySine | True | 20000 | 0.9808 | 0.9806 | 0.9799 |
+| ConceptDriftStream | True | 20000 | 0.9635 | 0.9637 | 0.7951 |
+| Hyperplane | True | 20000 | 0.9378 | 0.9382 | 0.818 |
+| Mixed | True | 20000 | 0.9821 | 0.9825 | 0.9132 |
+| SEA | True | 20000 | 0.9915 | 0.9919 | 0.9705 |
+| Sine | True | 20000 | 0.9779 | 0.978 | 0.9873 |
+| LEDDrift | True | 20000 | 0.9911 | 0.991 | 0.823 |
+| Waveform | True | 20000 | 0.8115 | 0.8122 | 0.7998 |
 
