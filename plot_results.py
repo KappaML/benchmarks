@@ -37,6 +37,16 @@ def create_markdown_tables(results):
             )
         }
         
+        # Add the first baseline model's metric if available
+        if result['baseline_metrics'] and len(result['baseline_metrics']) > 0:
+            first_baseline_name = next(iter(result['baseline_metrics']))
+            first_baseline = result['baseline_metrics'][first_baseline_name]
+            if first_baseline and len(first_baseline) > 0:
+                final_baseline_metric = first_baseline[-1]['metrics']['metric']['value']
+                row[result['final_metrics']['metric']['name'] + f'@{first_baseline_name}'] = round(
+                    final_baseline_metric, 4
+                )
+        
         if result['task'] == 'regression':
             regression_results.append(row)
         else:
