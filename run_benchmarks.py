@@ -98,11 +98,11 @@ Synthetic Datasets from river.datasets.synth
 BASELINE_MODELS = {
     "regression": {
         "Linear Regression": preprocessing.StandardScaler() | linear_model.LinearRegression(),
-        "Dummy - Mean": dummy.StatisticRegressor(stats.Mean()),
+        # "Dummy - Mean": dummy.StatisticRegressor(stats.Mean()),
     },
     "classification": {
         "KNN": preprocessing.StandardScaler() | neighbors.KNNClassifier(),
-        "Dummy - No Change": dummy.NoChangeClassifier(),
+        # "Dummy - No Change": dummy.NoChangeClassifier(),
     }
 }
 
