@@ -3,8 +3,11 @@
 This repository contains the code for running benchmarks for the [KappaML](https://kappaml.com) platform.
 
 Platform: https://kappaml.com
+
 API Keys: https://app.kappaml.com/api-keys
+
 API Documentation: https://api.kappaml.com/docs
+
 OpenAPI Schema: https://api.kappaml.com/openapi.json
 
 
